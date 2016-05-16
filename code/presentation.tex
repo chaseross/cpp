@@ -1,0 +1,126 @@
+\documentclass[8pt]{beamer}
+%\usetheme{CambridgeUS}
+%\usecolortheme{dove}
+\setbeamertemplate{caption}[numbered]
+\setbeamertemplate{footline}[frame number]
+\setbeamerfont{caption}{size=\scriptsize}
+\usepackage[gen]{eurosym}
+\usepackage{float}
+\usepackage{enumitem}
+\setlist[itemize]{leftmargin=*}
+\usepackage{moresize}
+\pdfmapfile{+sansmathaccent.map}
+
+\usepackage{tikz}
+\usepackage{pgfpages}
+\setbeamertemplate{background canvas}{
+    \tikz \draw (current page.north west) rectangle (current page.south east);
+        }
+\pgfpagesuselayout{2 on 1}[letterpaper,border shrink=5mm]
+\beamertemplatenavigationsymbolsempty
+\usepackage{caption}
+%\setbeameroption{show notes} %un-comment to see the notes
+\setbeamerfont{note page}{size=\ssmall}
+\graphicspath{{../input/}}
+\usepackage[outdir=./]{epstopdf}
+
+
+\begin{document}
+
+\DeclareGraphicsExtensions{.eps}
+
+\title{Capital Purchase Program}
+%\author{Chase Ross}
+%\date{March 23, 2016}
+
+%\beamersetaveragebackground{black}
+%\begin{frame}
+%\frametitle{}
+
+%\end{frame}
+%\beamersetaveragebackground{white}
+
+%\frame{\titlepage}
+
+%\frame{\frametitle{Table of contents}\tableofcontents}
+
+\frame{\frametitle{Capital Purchase Program}
+\begin{columns}[T] % align columns
+\begin{column}{.49\textwidth}
+
+\textbf{Background}
+\vspace{2mm}
+\begin{itemize}[label={--}]
+\item \textbf{10/3/08}: President Bush signs Emergency Economic Stabilization Act of 2008. 
+\item \textbf{10/13/08}: Treasury announces standardized program to purchase equity in financial institutions. 
+\item \textbf{10/14/08}: Treasury announces CPP and 9 financial institutions subscribe to the program for \$125 billion in aggregate.
+\item \textbf{11/14/08}:  Deadline for publicly held financial institutions to apply to CPP.
+\item \textbf{12/09/08}: To date, Treasury invests \$205 billion in 707 financial institutions.
+\item \textbf{12/31/09}: Last day for Treasury to make CPP investments. 
+ \end{itemize}
+ 
+
+\end{column}%
+\hfill%
+\begin{column}{.49\textwidth}
+
+\textbf{Design}
+\vspace{2mm}
+
+\begin{itemize}[label={--}]
+\item Mostly voluntary program for ``healthy, viable'' banks as deemed by their applicable federal banking regulator
+\item Preferred investment of 1-3\% RWA; average of 2.9\%.
+\item 5\% dividend for first 5 years, 9\% after.
+\item Included 10-year warrants with option for Treasury to purchase amount equal to 15\% of preferred equity
+\item Various compensation and management restrictions (bolstered by ARRA in February 09)
+\item To exit, preferred equity must be redeemed in full with ``qualified equity offering'' with regulators' approval
+\item After repayment of preferred, firms could purchase back warrants at fair market price
+\item If redeemed before January 2010 firms would get a discount on the warrants. 
+ \end{itemize}
+
+\end{column}%
+\end{columns}
+}
+
+\frame{\frametitle{ }
+\begin{columns}[T] % align columns
+\begin{column}{.49\textwidth}
+
+\textbf{Outcomes}
+\vspace{2mm}
+
+\begin{itemize}[label={--}]
+\item Of 707 institutions, 
+\begin{itemize}
+\item 260 full repayments
+\item 190 auctioned investments
+\item 32 bankruptcy/receivership
+\item 17 remain 
+\end{itemize}
+\item The largest firms repaid preferred investment by June and purchased warrants in August 2009.
+\item Total recovered: \$226.7 billion
+\item Tier 1 ratios increased from 10.9\% to 13.8\%, although aggregate common equity fell due to further credit losses and write-downs.
+\item Many banks turned down CPP funds after Treasury approval, so CPP funds were viewed as relatively costly. 
+ \end{itemize}
+
+
+\end{column}%
+\hfill%
+\begin{column}{.49\textwidth}
+
+\textbf{Evaluation}
+\vspace{2mm}
+
+\begin{itemize}[label={--}]
+\item Which banks participated in the CPP? The banks that needed the capital the most received funding, but strongest banks opted out $\rightarrow$ adverse signalling appeared to be minimized.
+\item Bayazitova (2012) finds Treasury was most likely to accept applications from larger banks with greater systemic risks, and Treasury did not provide capital to banks with high levels of troubled assets. 
+\item Taliaferro (2009) estimates FDIC's rejection rate at 11\%, Fed's between 20-39\%.
+\item Veronesi and Zingales (2009) find CPP resulted in a \$84-107 billion net benefit to taxpayer, mostly due to reductions in the probability of bankruptcy. 
+\item CPP may have prolonged banking recovery; CPP preferred was only buffered by common equity, not until SCAP certified TCE as adequate did bank valuations rebound. 
+ \end{itemize}
+
+
+\end{column}%
+\end{columns}
+}
+\end{document}

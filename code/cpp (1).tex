@@ -1,0 +1,91 @@
+\documentclass[12pt]{article}
+\usepackage{longtable}
+\usepackage{geometry}
+%\geometry{left=1.5 in,right=1.5 in,top=1.2in,bottom=1.2in}
+
+\usepackage{natbib}
+\setcitestyle{authoryear}  % set citation style to authoryear
+\bibliographystyle{plainnat} % use the plainnat instead of plain
+
+\usepackage{booktabs}
+\usepackage{amssymb, amsmath, amsfonts}
+\usepackage{outlines}
+\usepackage{soul}
+\usepackage[gen]{eurosym}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{authblk}
+\usepackage{lineno}
+\usepackage[hyphens]{url}
+\usepackage{hyperref}
+\hypersetup{
+ colorlinks = true, %Colours links instead of ugly boxes
+ urlcolor  = blue, %Colour for external hyperlinks
+ linkcolor = blue, %Colour of internal links
+ citecolor = blue %Colour of citations
+}
+\pagestyle{fancy}
+\usepackage{outlines}
+\usepackage{caption}
+%\captionsetup[table]{name=Figure}
+\graphicspath{{../input/}}
+\usepackage[outdir=./]{epstopdf}
+\usepackage{enumitem}
+\setlist[enumerate,2]{label=\roman*)}
+\setlist[enumerate,3]{label=\Roman*)}
+\setlist[enumerate,4]{label=\roman*)}
+
+\begin{document}
+
+\lhead{}
+\rhead{}
+
+\renewcommand{\headrulewidth}{0.0pt}
+\renewcommand{\footrulewidth}{0.0pt}
+
+\title{The Capital Purchase Program}
+\author{Chase P. Ross\thanks{\texttt{\href{mailto:chase.ross@yale.edu}{chase.ross@yale.edu}}}}
+\affil{Yale Program on Financial Stability \\ Yale School of Management}
+%\date{January 14, 2016}
+
+
+\maketitle
+
+\begin{abstract}
+tk
+[tk]
+tk
+\newline
+\newline
+\textbf{JEL Classification}: G01, G28, G20, H12, H81
+\newline
+\textbf{Keywords}: crisis management stress test, crisis intervention, Financial Services Authority, capital requirements, systemic risk
+
+\end{abstract}
+\newpage
+\tableofcontents
+\newpage
+
+\label{sec:body}
+\input{./overview.tex}
+
+\label{sec:design}
+\input{./design.tex}
+
+\label{sec:evaluation}
+\input{./evaluation.tex}
+
+\newpage
+\phantomsection
+\addcontentsline{toc}{section}{References}
+\nocite{*}
+\bibliography{cpp}
+\newpage
+
+\label{sec:resources}
+\input{./resources.tex}
+
+\label{sec:roadmap}
+\input{./roadmap.tex}
+
+\end{document}
