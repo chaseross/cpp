@@ -1,7 +1,7 @@
-Chase P. Ross (2016). "2010 CEBS EU-Wide Stress Test." Yale Program on Financial Stability.
+Chase P. Ross (2016). "Capital Purchase Program." Yale Program on Financial Stability.
 ===========================================================================================
 
 Summary
 -------
 
-Paper discussing the CEBS 2010 European stress test. Produced for the [Yale Program on Financial Stability](http://som.yale.edu/faculty-research/centers-initiatives/program-financial-stability).
+Working paper discussing the CPP program. Produced for the [Yale Program on Financial Stability](http://som.yale.edu/faculty-research/centers-initiatives/program-financial-stability).
