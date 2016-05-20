@@ -38,6 +38,14 @@ def cleanDirectory():
         shutil.copy(garbageFile, garbagePath)
         os.remove(garbageFile)
 
+    for garbageFile in glob.iglob(os.path.join(codePath, "*.nav")):
+        shutil.copy(garbageFile, garbagePath)
+        os.remove(garbageFile)
+
+    for garbageFile in glob.iglob(os.path.join(codePath, "*.snm")):
+        shutil.copy(garbageFile, garbagePath)
+        os.remove(garbageFile)
+
     for garbageFile in glob.iglob(os.path.join(codePath, "*.gz")):
         shutil.copy(garbageFile, garbagePath)
         os.remove(garbageFile)
