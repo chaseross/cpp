@@ -1,18 +1,21 @@
 \documentclass[12pt]{article}
 \usepackage{longtable}
 \usepackage{geometry}
-%\geometry{left=1.5 in,right=1.5 in,top=1.2in,bottom=1.2in}
+\geometry{left=1.5 in,right=1.5 in,top=1.00in,bottom=1.0in}
 
-\usepackage{natbib}
+%\documentclass[justified,notoc]{tufte-handout2}
+%need to figure out why figure refernces are messed up
+
+\usepackage{natbib}   % call natbib
 \setcitestyle{authoryear}  % set citation style to authoryear
 \bibliographystyle{plainnat} % use the plainnat instead of plain
-
 \usepackage{booktabs}
 \usepackage{amssymb, amsmath, amsfonts}
 \usepackage{outlines}
 \usepackage{soul}
 \usepackage[gen]{eurosym}
 \usepackage{graphicx}
+
 \usepackage{fancyhdr}
 \usepackage{authblk}
 \usepackage{lineno}
@@ -27,65 +30,513 @@
 \pagestyle{fancy}
 \usepackage{outlines}
 \usepackage{caption}
-%\captionsetup[table]{name=Figure}
+\captionsetup[table]{name=Figure}
 \graphicspath{{../input/}}
 \usepackage[outdir=./]{epstopdf}
+
+
 \usepackage{enumitem}
 \setlist[enumerate,2]{label=\roman*)}
 \setlist[enumerate,3]{label=\Roman*)}
 \setlist[enumerate,4]{label=\roman*)}
 
+%\renewcommand{\familydefault}{\sfdefault}
+% ------------------------------- use \citep{FAQs} to cite
+\usepackage{filecontents}
+\begin{filecontents}{\jobname.bib}
+}
+
+@article{Ross2016a,
+  title   = {{The Supervisory Capital Assessment Program}},
+  publisher = "Yale Program on Financial Stability",
+  author  = "Ross, Chase P.",
+  year   = "2016",
+  doi    = " ",
+  volume  = " ",
+  journal  = "Yale Program on Financial Stability Intervention Case",
+  issn   = " ",
+  url    = {http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2722712},
+}
+
+@article{Ross2016b,
+  title   = {{The Capital Assistance Program}},
+  publisher = "Yale Program on Financial Stability",
+  author  = "Ross, Chase P.",
+  year   = "2016",
+  doi    = " ",
+  volume  = " ",
+  journal  = "Yale Program on Financial Stability Intervention Case",
+  issn   = " ",
+}
+
+
+@book{Geithner,
+  title={{Stress test: Reflections on financial crises}},
+  author={Geithner, Timothy F},
+  year={2014},
+  publisher={Crown}
+}
+
+@misc{Paulson,
+  title={{October 14, 2008 Speech}},
+  author={Paulson, Hank},
+  year={2008},
+    url   = {http://ftalphaville.ft.com/2008/10/14/17036/paulsons-nine-strong-posse/},
+}
+
+@misc{CPPInstructions,
+  title={{Application Guidelines for TARP Capital Purchase Program}},
+  author={Treasury},
+  year={2008},
+    url   = {https://www.treasury.gov/initiatives/financial-stability/TARP-Programs/bank-investment-programs/cap/Documents/application-guidelines.pdf
+},
+}
+
+@book{Bernanke,
+  title={{The Courage to Act: A Memoir of a Crisis and its Aftermath}},
+  author={Bernanke, Ben S},
+  year={2015},
+  publisher={WW Norton \& Company}
+}
+
+@article{CAPTerms,
+  title   = {{U.S. Treasury Releases Terms of Capital Assistance Program}},
+  author = "U.S. Treasury",
+  year   = "2009",
+  doi    = " ",
+  volume  = " ",
+  journal  = " ",
+  issn   = " ",
+  url    = {https://www.treasury.gov/press-center/press-releases/Pages/tg40.aspx},
+}
+
+
+@article{Mofo,
+  title={{Capital Assistance Program Public (CAP) Cheat Sheet}},
+  author={{Morrison Foerster}},
+  year={2009},
+url    = {http://media.mofo.com/docs/pdf/090310CAPPublicCheatSheet.pdf},
+}
+
+@article{OFS,
+  title={{Troubled Asset Relief Program: Two Year Retrospective}},
+  author={{Office of Financial Stability}},
+  year={2010},
+url    = {https://www.treasury.gov/press-center/news/Documents/TARP\%20Two\%20Year\%20Retrospective_10\%2005\%2010_transmittal\%20letter.pdf},
+}
+
+
+@article{CPPFaq,
+  title   = {{Process-Related FAQs for Capital Purchase Program}},
+  author = "U.S. Treasury",
+  year   = "2008",
+  doi    = " ",
+  volume  = " ",
+  journal  = " ",
+  issn   = " ",
+  url    = {https://www.treasury.gov/press-center/press-releases/Documents/faqcpp.pdf},
+}
+
+
+@article{Andrews,
+  title={{U.S. May Convert Banks’ Bailouts to Equity Share}},
+  author={Andrews, Edmund L.},
+  year={2009},
+  publisher={The New York Times},
+  url={http://www.nytimes.com/2009/04/20/business/20bailout.html?_r=1},
+}
+
+
+@article{kacperczyk,
+  title={When safe proved risky: commercial paper during the financial crisis of 2007--2009},
+  author={Kacperczyk, Marcin and Schnabl, Philipp},
+  journal={The Journal of economic perspectives},
+  volume={24},
+  number={1},
+  pages={29--50},
+  year={2010},
+  publisher={American Economic Association}
+}
+
+@article{Khan,
+  title={The capital purchase program and subsequent bank SEOs},
+  author={Khan, Mozaffar and Vyas, Dushyantkumar},
+  journal={Journal of Financial Stability},
+  volume={18},
+  pages={91--105},
+  year={2015},
+  publisher={Elsevier}
+}
+
+
+@book{paulsonbook,
+  title={On the Brink: Inside the Race to Stop the Collapse of the Global Financial System},
+  author={Paulson, Henry},
+  year={2010},
+  publisher={Business Plus}
+}
+
+@article{Greenlaw,
+  title={Leveraged Losses: Lessons from the Mortgage Market Meltdown},
+  author={Greenlaw, David and Hatzius, Jan and Kashyap, Anil K and Shin, Hyun Song},
+    journal={U.S. Monetary Policy Form 2008}
+}
+
+@article{IMF2010,
+  title={Funding, and Systemic Liquidity},
+  author={Sovereigns, IMF},
+  journal={Global Financial Stability Report},
+  year={2007}
+}
+
+@book{Elliott,
+  title={A primer on bank capital},
+  author={Elliott, Douglas J},
+  year={2010},
+  publisher={Brookings Institution}
+}
+
+@book{Sorkin,
+  title={Too Big to Fail},
+  author={Sorkin, Andrew Ross},
+  year={2009},
+  publisher={Viking}
+}
+
+@article{Peek,
+  title={The international transmission of financial shocks: The case of Japan},
+  author={Peek, Joe and Rosengren, Eric S},
+  journal={American Economic Review},
+  volume={87},
+  number={4},
+  year={1997}
+}
+
+@article{Hoshi,
+  title={Will the US bank recapitalization succeed? Eight lessons from Japan},
+  author={Hoshi, Takeo and Kashyap, Anil K},
+  journal={Journal of Financial Economics},
+  volume={97},
+  number={3},
+  pages={398--417},
+  year={2010},
+  publisher={Elsevier}
+}
+
+@misc{shortban,
+  title={{SEC Halts Short Selling of Financial Stocks to Protect Investors and Markets}},
+  author={{Securities Exchange Commission}},
+  year={2008},
+    url   = {https://www.sec.gov/news/press/2008/2008-211.htm},
+}
+
+@misc{MUFGMS,
+  title={{MUFG to renegotiate Morgan Stanley deal}},
+  author={Robinson, Gwen},
+  year={2008},
+    publisher={The Financial Times},
+    url   = {http://ftalphaville.ft.com/2008/10/13/16948/mufg-to-renegotiate-morgan-stanley-deal/},
+}
+
+@misc{UKPlans,
+  title={{UK to inject \textsterling 39bn into banks}},
+  author={Larsen, Peter},
+  year={2008},
+    publisher={The Financial Times},
+    url   = {http://www.ft.com/cms/s/0/153e175e-9883-11dd-ace3-000077b07658.html},
+}
+
+@misc{UKActual,
+  title={{UK launches \textsterling 37bn bank rescue}},
+  author={Robinson, Gwen},
+  year={2008},
+    publisher={The Financial Times},
+    url   = {http://www.ft.com/cms/s/0/83bc2cea-98ef-11dd-9d48-000077b07658.html},
+}
+
+@misc{GSBHC,
+  title={{Goldman Sachs to Become the Fourth Largest Bank Holding Company}},
+  author={{Goldman Sachs}},
+  year={2008},
+    url   = {http://www.goldmansachs.com/media-relations/press-releases/archived/2008/bank-holding-co.html},
+}
+
+
+\end{filecontents}
+% -------------------------------
+
 \begin{document}
 
-\lhead{}
-\rhead{}
-
-\renewcommand{\headrulewidth}{0.0pt}
-\renewcommand{\footrulewidth}{0.0pt}
+	\lhead{}
+	\rhead{}
+	\renewcommand{\headrulewidth}{0.0pt}
+	\renewcommand{\footrulewidth}{0.0pt}
 
 \title{The Capital Purchase Program}
 \author{Chase P. Ross\thanks{\texttt{\href{mailto:chase.ross@yale.edu}{chase.ross@yale.edu}}}}
 \affil{Yale Program on Financial Stability \\ Yale School of Management}
-%\date{January 14, 2016}
+\date{}
 
 
 \maketitle
 
 \begin{abstract}
-tk
-[tk]
-tk
+On October 14, 2008 US policymakers announced a plan to purchase preferred shares in stressed US banks and financial institutions to ensure the US banking system had sufficient capital to withstand
 \newline
 \newline
 \textbf{JEL Classification}: G01, G28, G20, H12, H81
 \newline
-\textbf{Keywords}: crisis management stress test, crisis intervention, Financial Services Authority, capital requirements, systemic risk
+\textbf{Keywords}: crisis intervention, Capital Purchase Program, TARP,  capital requirements, systemic risk, Tier 1 Capital
 
 \end{abstract}
 \newpage
 \tableofcontents
 \newpage
 
-\label{sec:body}
-\input{./overview.tex}
+\section{Overview}
 
-\label{sec:design}
-\input{./design.tex}
+\subsection{Background}
 
-\label{sec:evaluation}
-\input{./evaluation.tex}
+Financial markets became increasing volatile beginning in the summer of 2007 and sharply more so following the bankruptcy of Lehman brothers on September 15, 2008 and the subsequent runs on AIG and the Reserve Primary Fund. Combined, the run on the securitized banking system escalated in September 2008 and financial institutions hoarded cash as uncertainty about the value of banks' assets pushed interbank funding rates up. Estimates at the time forecast \$500 billion in losses within the mortgage market through 2008 \citep{Greenlaw}.\footnote{The IMF estimated about \$700 billion in aggregate losses and writedowns within the US banking system between 2007Q2 and 2010 Q2. \citep{IMF2010}.} The provision of private credit collapsed. Emergency liquidity provision by the Federal Reserve helped viable firms finance themselves, but policymakers and market analysts were concerned banks did not have sufficient capital to absorb additional  losses. As a response, Congress passed the Emergency Economic Stabilization Act of 2008 (EESA) in early October 2008.\footnote{Congress initially tried to pass the law, with a handful of differences, in late September but the bill did not pass. The S\&P lost 8.81\% that day.} The EESA created the Toxic Asset Relief Program (TARP) with \$700 billion in funding.
 
-\newpage
+Initially, policymakers designed TARP to purchase impaired assets from qualified regulated financial institutions. These purchases would prevent banks from selling their assets at fire-sale prices and using their limited capital buffers to absorb the losses. However, policymakers at the Treasury and Federal Reserve ultimately decided it was best to purchase equity directly from banks instead for three reasons: first, policymakers were concerned the process of setting up the purchasing program's logistics would take too long\footnote{The Treasury expected it would take 45 days until the program could begin its purchases. \citep{Geithner}.}; second, it was difficult to set appropriate prices for securitized assets with no market price\footnote{For example, the Federal Reserve and JPMorgan struggled for many months to negotiate appropriate prices for the pool of Bear Stearns mortgage securities JPMorgan agreed to purchase in March 2008 as part of the Maiden Lane I transaction. \citep{Geithner}.}; and third, equity was a more efficient use of the limited TARP funds than asset purchases.\footnote{For a bank with ten to one leverage, \$1 billion in equity investments is equal to \$10 billion in asset purchases.}
+
+Capital adequacy is vital for banks to intermediate credit. \citet{Peek} shows that banks without sufficient common equity pull back from lending. When supervisors and banks are unable or unwilling to recapitalize the banking system, outcomes for a wide variety of macroeconomic indicators are dim: investment, output and unemployment all suffer. \citep{Hoshi}. Further, in the week leading up to the announcement of capital injections, banks struggled to finance their operations while interbank funding rates increased to all-time highs: the TED spread\footnote{The TED spread is the spread between short-term US Treasury bills (T) and eurodollar futures (ED).} peaked at an all-time high of 458 basis points on October 10, 2008 as shown in Figure~\ref{ted}. Equity markets reflected the stresses, as well: the week of October 6 was the worst week for the S\& P since 1933.\footnote{As an indication of the unprecedented level of uncertainty in financial markets, on Friday October 10 the Dow fell 680 points, rebounded 631 points, wiped out the rebound, then rebounded yet again 853 points but then ultimately gave up 129 points on the day. Similarly, the S\&P lost 8\% in the last hour of trading alone. \citep{paulsonbook}.}
+
+\begin{figure}[h]
+\caption{Ted Spread}\label{ted}
+\centering
+\includegraphics[width=\textwidth]{ted.pdf}
+\raggedright
+\footnotesize Source: Federal Reserve.
+\end{figure}
+
+The week of October 6 was particularly stressful for the US banking system. Notably, the SEC had banned short selling of financial stocks beginning September 19 and expiring on Wednesday October 8. \citep{shortban}. At the same time, Morgan Stanley struggled to remain viable as it was seen as the most vulnerable bank following Lehman. On September 29, Mitsubishi UFJ agreed to purchase a 9\% of Morgan Stanley's at \$25.25, with the deal closing on October 13. Morgan Stanley executives expressed frustration that the short-sale ban would expire just days before the deal closed. After the ban expired, Morgan Stanley's shares fell more than 60\% and market analysts remained uncertainty whether the deal would indeed the following week. Ultimately, Mitsubishi renegotiated the deal to purchase a 21\% stake for \$9 billion.\footnote{Treasury Secretary Paulson, concerned Mitsubishi may pull back from the deal, sent the board of Mitsubishi a letter the earlier in the day which outlined the principles of their policy actions and that they indended to protect foreign investors, but did not explicitly mention the deal or Morgan Stanley. Within a few hours, Mitsubishi had agreed to the finalized deal. \citep{paulsonbook}.}\footnote{As the deal closed on Columbus day -- a bank holiday -- Mitsubishi was unable to wire the \$9 billion check. Morgan Stanley needed the cash on an emergency basis, so Mitsubishi gave Morgan Stanley a physical check for the \$9 billion. The check is likely the largest ever written. \citep{Sorkin}.} \citep{MUFGMS}. Further, AIG had depleted its \$85 billion bridge loan the same week and US policymakers had to set up an additional \$37.8 billion program. \citep{Geithner}.
+
+The UK government set the precedent for direct capital injections on October 8, 2008 when UK policymakers unveiled a \textsterling 400 billion bank assistance package which included \textsterling 25 billion to recapitalize the banking system, with an additional \textsterling 25 billion available if policymakers deemed necessary. The recapitalization plan also included the creation of a guarantee scheme of \textsterling 250 billion for new wholesale debt from banks with a plan to boost Tier 1 capital in the amount supervisors deemed appropriate. UK banks had until the end of the year to submit capital plans and their plans to raise private capital. \citep{UKPlans}. However, the panicky selling leading into the weekend of October 11 compelled UK policymakers to speed up the recapitalization process so they could announce the terms of capital injections by market open on Monday October 13. The banks, Barclays in particular, sought extra time to raise private capital and therefore avoid having the government as their largest shareholder. Shortly thereafter UK regulators announced a \textsterling 9 billion investment in RBS and Lloyds/HBOS preferred shares, giving the government a majority share of RBS and more than 40\% share of Lloyds/HBOS. Barclays agreed to forgo its dividends through 2008 while it sought to raise an additional \textsterling 10 billion privately. \citep{UKActual}.
+
+Shortly thereafter, US policymakers announced direct capital injections with TARP funds on October 14, 2008 through the so-called Capital Purchase Program (CPP) with \$250 billion from TARP funds.
+
+\subsection{Program Description}
+
+This case divides the CPP into three distinct phases: the initial round of capital injection on October 13, Columbus Day, to eight of the largest bank holding companies (BHCs), the application-based CPP investments available to other, mostly smaller, banks between October 2008 and November 2008, and Treasury's subsequent exit from its CPP investments which continues as of July 2016.
+
+\subsection*{Columbus Day Capital Injections}
+
+Following the tumultuous week of October 6 -- the worst week for the S\&P since 1933, as well as notable stresses on Morgan Stanley and AIG -- regulators decided they needed to do something ``dramatic.'' \citep{paulsonbook}. Policymakers had little time to develop a plan. In addition to developing a guarantee program, former President of the New York Federal Reserve Timothy F. Geithner noted ``Treasury and Fed officials'] other challenge that weekend was to figure out the structure of capital investments--what kind of capital, who would get it, how to price it, and so forth. This would be the most sweeping government intervention in the private markets since the 1930s, and we had two days to design it.'' \citep{Geithner}. The plan they ultimately developed was similar to one used in the UK, capital injections through preferred shares alongside a guarantee on new wholesale bank debt; in fact, US policymakers had received a copy of the UK's capital plan beforehand and found the terms to be more punitive than the US plan called for. \citep{paulsonbook}.
+
+Policymakers feared stigma surrounding the CPP would prevent the firms which needed capital from using the program. The UK program was voluntary and only the weaker firms accepted capital -- Barclays, for example, refrained from participation -- and markets punished those weak firms. However, no US regulator had the ability to compel private financial institutions to accept government capital. To address this, the CPP came with a 5\% dividend for the first five years which regulators hoped was cheap enough to get all nine banks to participate. Further, to persuade the most important banks to join the program and therefore prevent the program from being stigmatized, policymakers arranged a meeting between the heads of the relevant regulatory agencies with the leaders of the most systemically important banks.
+
+Hank Paulson, the US Treasury Secretary, invited the leaders of the major nine U.S. banks\footnote{These banks included JP Morgan, Bank of America, Citigroup, Wells Fargo, Goldman Sachs, Morgan Stanley, Merrill Lynch (although Bank of America was acquiring it), State Street and Bank of New York Mellon.} to meet on Monday October 13. Treasury did not select the banks invited to this initial CPP meeting; consistent with the final design of the CPP which called for each banks' application to be approved and overseen by their relevant federal banking regulator (FBR), the New York Fed and the OCC selected the banks. Regulators chose the banks based on their systemic importance rather than business line -- the banks included the four largest commercial banks, three investment banks\footnote{Bank of America had  agreed to purchase Merrill Lynch on September 15, 2008 with the transaction closing in the first quarter of 2009. Additionally, Morgan Stanley and Goldman Sachs converted from independent investment banks to bank holding companies on and September 21, respectively. The two converted to BHCs for similar reasons: the ``market views oversight by the Federal Reserve and the ability to source insured bank deposits as providing a greater degree of safety and soundness... [Goldman Sachs] view[s] regulation by the Federal Reserve Board as appropriate and in the best interest of protecting and growing our franchise across our diverse range of businesses.'' \citep{GSBHC}.}
+
+Some bank leaders were reluctant to take the capital, but ultimately agreed to take the capital -- even if they initially felt it was unnecessary. \citep{Geithner}. At its core, the program depended on whether the strongest and most systematically important banks would join the program, and by calling the leaders of these banks together regulators were able to convince them of the value of participation. Table~\ref{columbusDay} lists the amount of capital investment in each of the nine banks as determined on Columbus Day. Even before formal announcement of the terms, leaks had emerged about the nature of the meeting and markets responded positively -- the S\&P had its largest one day point increase to date. The program was formally announced the next day on October 14, 2008.
+
+\begin{table}[htbp]
+\setlength\LTleft\fill
+\setlength\LTright{0pt}
+\begin{longtable}[l]{@{\extracolsep{\fill}}@{}ll@{}ll@{}}
+\caption{Columbus Day Capital Injections}\label{columbusDay}\\
+\toprule
+\textbf{Firm} & \textbf{CPP Investment} &\tabularnewline
+\midrule
+\endhead
+Citigroup & \$25 billion &\tabularnewline
+JP Morgan Chase & \$25 billion &\tabularnewline
+Bank of America (acquiring Merrill) & \$25 billion & ~\tabularnewline
+Wells Fargo (acquiring Wachovia) & \$25 billion &\tabularnewline
+Goldman Sachs & \$10 billion & \tabularnewline
+Morgan Stanley & \$10 billion & \tabularnewline
+Bank of New York Mellon & \$3 billion &\tabularnewline
+State Street &  \$2 billion &\tabularnewline
+\bottomrule
+\textsc{Total} &  \$125 billion &\tabularnewline
+\bottomrule
+\multicolumn{3}{l}{\footnotesize Source: U.S. Treasury.}
+\end{longtable}
+\end{table}
+
+%%%%The program  %%%%% START HERE WITH THE ACTUAL DETAILS OF THE PROGRAM FROM THE GOOGEL SHEET
+
+
+
+\subsection*{Application-based Capital Injections}
+
+\subsection*{Unwinding CPP Investments}
+
+
+
+
+
+
+\begin{figure}[h]
+\caption{CPP reduced the probability of default for large banks}\label{figure1}
+\centering
+\includegraphics[width=\textwidth]{CDS.pdf}
+\raggedright
+\footnotesize Source: Bloomberg.
+\end{figure}
+
+\subsection{Outcomes}
+After its final investment in December 2009, the CPP provided about \$205 billion in capital to 707 financial institutions. Figure~\ref{figure1} shows that the initial announcement of the CPP decreased the probability of bankruptcy for the largest banks.
+
+
+\begin{figure}[h]
+\caption{Exit Types by Year}\label{exits}
+\centering
+\includegraphics[width=\textwidth]{Exits.pdf}
+\raggedright
+\footnotesize Source: Bloomberg.
+\end{figure}
+
+\section{Key Design Decisions}
+
+\subsection{The CAP existed as a public backstop should the SCAP stress test reveal capital holes the private sector was unwilling to fill.}
+
+\section{Evaluation}
+
+
 \phantomsection
+
 \addcontentsline{toc}{section}{References}
+
 \nocite{*}
-\bibliography{cpp}
-\newpage
+\bibliography{\jobname}
 
-%\label{sec:resources}
-%\input{./resources.tex}
+\section{Appendix A - List of Resources}
 
-\label{sec:roadmap}
-\input{./roadmap.tex}
+\subsection{Summary of Program}
+
+\begin{itemize}
+
+\item
+\ul{Treasury White Paper: The Capital Assistance Program and its Role in the Financial Stability Plan}, US Treasury, February 2009 -- \emph{Treasury white paper describing how the CAP fits within the broader financial stability plan, the contingent capital framework, and the program's specific design elements.} \url{https://www.treasury.gov/press-center/press-releases/Pages/tg40.aspx}
+\item
+\ul{Term
+  Sheet for Capital Assistance Program}, U.S. Treasury -- \emph{Treasury
+  document discussing terms of investments made via the CAP.} \url{http://www.treasury.gov/press-center/press-releases/Documents/tg40_captermsheet.pdf}
+\end{itemize}
+
+\subsection{Implementation Documents}
+\begin{itemize}
+\item
+\ul{The
+  Supervisory Capital Assessment Program: Design and Implementation},
+  Board of Governors of the Federal Reserve System, April 24, 2009 -- \emph{Federal Reserve document outlining design details of the SCAP.} \url{http://www.federalreserve.gov/bankinforeg/bcreg20090424a1.pdf}
+\end{itemize}
+
+\subsection{Legal/Regulatory Guidance}
+
+\begin{itemize}
+\item
+\ul{Recovery Plan's Retroactive Restrictions and Say-on-Pay}, Morrison Foerster, March 2009 -- \emph{The American Recovery and Reinvestment Act of 2009 changed executive compensation restrictions on firms participating in EESA programs; this document outlines the relevant changes.} \url{http://media.mofo.com/files/uploads/Images/090302NewEra.pdf}
+\end{itemize}
+
+\subsection{Press Releases/Announcements}
+
+\begin{itemize}
+\item
+\ul{U.S. Treasury Releases Terms of Capital Assistance Program}, US Treasury, February 25, 2009 -- \emph{Treasury press release describing how the Treasury and Federal banking agencies would test large bank holding companies with the SCAP and how the CAP would be used together with the SCAP.} \url{http://www.federalreserve.gov/newsevents/press/bcreg/bcreg20090507a1.pdf}
+\item
+\ul{ Treasury Announcement Regarding the Capital Assistance Program}, November 9, 2009 -- \emph{Press release announcing the closure of the CAP after making no investments.} \url{https://www.treasury.gov/press-center/press-releases/Pages/tg359.aspx}
+\item
+\ul{SCAP
+  Results}, Federal Reserve, May 7, 2009 -- \emph{Press release which
+  announces the results of the SCAP.} \url{http://www.federalreserve.gov/newsevents/press/bcreg/20090507a.htm}
+\item
+\ul{Statement
+  by Timothy F. Geithner U. S. Secretary of the Treasury before the
+  Senate Banking Committee}, May 20, 2009 -- \emph{Secretary Geithner
+  discusses the initial impact of and market response to the SCAP's
+  results.} \url{https://www.treasury.gov/press-center/press-releases/Pages/tg139.aspx}
+\end{itemize}
+
+\subsection{Media Stories}
+
+\begin{itemize}
+\item
+\ul{Citigroup Sheds Energy Unit and Its \$100 Million Trader}, New York Times, October 9,
+  2009 -- \emph{Article discussion sale of Philbro by Citigroup.} \url{http://www.nytimes.com/2009/10/10/business/10citi.html}
+\item
+\ul{U.S. May Convert Banks’ Bailouts to Equity Share}, New York Times, April 19,
+  2009 -- \emph{Article discussion the possibility of banks converting CPP shares to common equity.} \url{http://www.nytimes.com/2009/04/20/business/20bailout.html}
+\end{itemize}
+
+\subsection{Key Academic Papers}
+
+\begin{itemize}
+\item
+\ul{Valuing the Treasury's Capital Assistance Program},
+Paul Glasserman and Zhenyu Wang, 2011 -- \emph{Paper
+which finds CAP to be very valuable to banks, with a discussion of why banks ultimately did not participate in the program.} \url{http://papers.ssrn.com/sol3/papers.cfm?abstract_id=1525640}
+\item
+\ul{A (Mostly) Private Capital Assistance Programme
+(CAP)},
+Richard Caballero, 2009 -- \emph{Paper describing an alternative to the CAP which set a government guaranteed floor on bank stock prices.} \url{http://voxeu.org/article/recapitalising-banks-caballero-plan}
+\end{itemize}
+\subsection{Reports/Assessments}
+
+\begin{itemize}
+\item
+\ul{Troubled
+  Asset Relief Program: Two Year Retrospective}, Office of Financial
+  Stability, October 2010 -- \emph{Office of Financial Stability report
+  discussing the program and its outcomes in the context of the wider
+  swath of TARP.} \url{http://www.treasury.gov/press-center/news/Documents/TARP\%20Two\%20Year\%20Retrospective_10\%2005\%2010_transmittal\%20letter.pdf}
+\end{itemize}
+
+\section{Appendix B - Road Map}
+
+The following is a list of the key design decisions that will likely have to be made in implementing a program similar to the Capital Assistance Program (CAP), a  capital backstop program available to large bank holding companies deemed to have insufficient capital following a stress test.
+
+\subsection{Key Questions}
+
+\begin{outline}[enumerate]
+
+\1 Which agency or agencies have the authority and expertise to provide the capital backstop?
+\2 What is the basis of this authority?
+\2 What particular elements/terms must be satisfied to fit within the authority?
+\2 After designing, have all required elements been satisfied?
+\2 Is any additional authority required in order to provide a capital backstop?
+\2 How long should firms be allowed to seek private capital before turning to the public backstop?
+\1 How should a public capital backstop be structured?
+\2 What sort of security should the public capital be provided through?
+\2 Should economic conditions worsen, can the public capital convert into common equity?
+\3 If so, should the securities convert to common at a discount or at face value?
+\2 How can the backstop be structured to compel firms to first raise private capital and use the public capital as a less preferred option?
+\2 Does the backstop come with a dividend? If so, what is the right balance between providing capital to firms that otherwise cannot raise capital but is also sufficiently punitive that firms work to replace it with private capital quickly?
+\2 Is there mandatory conversion to common after a time period? If so, after how long?
+\2 How does the taxpayer participate in the potential future profitability of the involved firms? Does the public receive warrants, for example?
+\2 How does the public exit its investment? Over what time frame?
+\2 How can participating financial institutions redeem their capital injections? With cash proceeds from equity issuance only, as in the CAP?
+\1 To what extent does the government participate ?
+\2 To what extend does the public influence management decision making?
+\2 What other constraints will firms using public capital face? (E.g. executive compensation caps, restrictions on common stock dividends, buybacks and cash acquisitions, etc.)
+\2 Are there sufficient authorized shares to meet the capital backstop's requirements?
+\2 Does the capital injection trigger any poison pill or covenants?
+\2 What is the relationship between the capital injection's preferred shares and existing preferred shares?
+\1 Which firms are eligible for the capital backstop?
+\2 Are foreign institutions eligible?
+\2 What tests are conducted to determine capital adequacy and the amount of support the public should provide? (E.g., is there a stress test?)
+\2 What metric or measure should regulators target to assess capital adequacy?
+\3 Should the test focus on Tier 1 capital, Tier 1 Common capital, tangible common equity, a combination of these or something else?
+\4 For example, should preferred equity, goodwill and intangible assets be included in the equity component?
+\4 Should the denominator be based on risk-weighted assets, tangible assets or something else?
+
+\end{outline}
+
+\subsection{Implementation Steps}
+
+\begin{enumerate}
+
+\item Develop the description of the capital backstop, including legal authority, purpose, firm eligibility, a general timeline, et cetera and seek input from industry and other stakeholders.
+\item If necessary, seek approval for the program, funding et cetera.
+\item Produce term sheet for the program.\footnote{CAP Example Term Sheet: \newline \url{https://www.treasury.gov/press-center/press-releases/Documents/tg40_captermsheet.pdf}}
+\item Develop application instructions for completing the documentation necessary to participate in the capital back stop.
+\item Produce capital adequacy targets with which to judge applications.
+\item Find institution specific capital adequacy using supervisors and firms own' capital adequacy estimates.
+\item Compare supervisors' capital adequacy estimates with firms' own estimates and reconcile differences.
+\item Provide capital to firms with inadequate capital.
+
+\end{enumerate}
 
 \end{document}

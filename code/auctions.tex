@@ -1,0 +1,105 @@
+\documentclass[8pt]{beamer}
+%\usetheme{CambridgeUS}
+%\usecolortheme{dove}
+\setbeamertemplate{caption}[numbered]
+\setbeamertemplate{footline}[frame number]
+\setbeamerfont{caption}{size=\scriptsize}
+\usepackage[gen]{eurosym}
+\usepackage{float}
+\usepackage{enumitem}
+\setlist[itemize]{leftmargin=*}
+\usepackage{moresize}
+\pdfmapfile{+sansmathaccent.map}
+
+\usepackage{tikz}
+\usepackage{pgfpages}
+\setbeamertemplate{background canvas}{
+    \tikz \draw (current page.north west) rectangle (current page.south east);
+        }
+\pgfpagesuselayout{2 on 1}[letterpaper,border shrink=5mm]
+\beamertemplatenavigationsymbolsempty
+\usepackage{caption}
+%\setbeameroption{show notes} %un-comment to see the notes
+\setbeamerfont{note page}{size=\ssmall}
+\graphicspath{{../input/}}
+\usepackage[outdir=./]{epstopdf}
+
+
+\begin{document}
+
+\DeclareGraphicsExtensions{.eps}
+
+\title{Capital Purchase Program Auctions}
+%\author{Chase Ross}
+%\date{March 23, 2016}
+
+%\beamersetaveragebackground{black}
+%\begin{frame}
+%\frametitle{}
+
+%\end{frame}
+%\beamersetaveragebackground{white}
+
+%\frame{\titlepage}
+
+%\frame{\frametitle{Table of contents}\tableofcontents}
+
+\frame{\frametitle{Capital Purchase Program Auctions}
+
+\vspace*{\fill}
+\begin{figure}[h]
+\noindent
+\makebox[\textwidth]{\includegraphics[scale=.7 ]{Exits.pdf}}%
+
+\end{figure}
+\textbf{Background}
+\begin{itemize}[label={--}]
+\item Under CPP Treasury invested \$205 billion in 707 financial institutions between October 2008 and December 2009. 
+\item CPP securities came with 5\% dividend for first 5 years, 9\% after. Warrants were also involved.
+\item May 2012: Treasury announced strategy to wind-down CPP portfolio which emphasized auctions. 
+\item Exit from CPP possible through: (1) repayment, (2) restructuring w/ new capital, or (3) auction.
+\end{itemize}
+}
+
+\frame{\frametitle{ }
+\begin{columns}[T] % align columns
+\begin{column}{.49\textwidth}
+
+\textbf{Design}
+\vspace{2mm}
+
+\begin{itemize}[label={--}]
+\item Auctions sold either a single institution's CPP securities or pooled many firms' securities together depending on size.
+\item The bank (with their regulators' approval) or a designate bidder (a familiar shareholder) could submit an ``opt-out bid'' to be removed from the set of firms to be auctioned. 
+\item Modified Dutch Auction:  price of securities lowered until there are enough bids to sell all the securities and all the securities are then sold at that price.
+\item ``Modified'' in the sense that there was a floor, often set by the firm's opt-out bid.
+\item In pooled auctions, a single bidder is allocated all auctioned securities.
+\item In single institution auctions, many bidders are allocated portions of the auctioned securities at the single clearing price.
+\item Treasury previously used Dutch auctions to sell CPP warrants. 
+\end{itemize}
+
+\end{column}%
+\hfill%
+\begin{column}{.49\textwidth}
+
+\textbf{Outcomes, as of June 10, 2016}
+\vspace{2mm}
+
+\begin{itemize}[label={--}]
+\item Of \$205 billion disbursed, \$199.6 repaid, \$5.1 billion written off, \$300 million outstanding, \$27.1 billion in returns. 
+\item 28 auctions for 190 CPP institutions yielding \$3.04 billion in proceeds.
+\item Auctions returned about 80\% face value.
+\item 14 institutions remain; expected to exit via (mostly) restructuring.
+ \end{itemize}
+
+\textbf{Evaluation}
+\vspace{2mm}
+\begin{itemize}[label={--}]
+\item Opt-out bid = floor price:  some questioned the use of the firm's opt-out bid as the auction floor; Treasury did not explicitly say they'd do this. 
+\item Disclosure requirements: publicly traded banks complained the SEC required them to publicly disclose their intent to bid and the amount of capital raised to do so.
+\item No matching bids: many banks wanted the ability to match the winner's bid, but Treasury didn't allow it.
+\end{itemize}
+\end{column}%
+\end{columns}
+}
+\end{document}
