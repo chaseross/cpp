@@ -1,0 +1,217 @@
+\begin{thebibliography}{34}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Andrews(2009)]{Andrews}
+Edmund~L. Andrews.
+\newblock {U.S. May Convert Banks’ Bailouts to Equity Share}.
+\newblock 2009.
+\newblock URL
+  \url{http://www.nytimes.com/2009/04/20/business/20bailout.html?_r=1}.
+
+\bibitem[Bernanke(2015)]{Bernanke}
+Ben~S Bernanke.
+\newblock \emph{{The Courage to Act: A Memoir of a Crisis and its Aftermath}}.
+\newblock WW Norton \& Company, 2015.
+
+\bibitem[{Board of Governors of the Federal Reserve System}(2008)]{FedTier1}
+{Board of Governors of the Federal Reserve System}.
+\newblock {Press Release: Regarding CPP Shares and Tier 1 Capital}, 2008.
+\newblock URL
+  \url{https://www.federalreserve.gov/newsevents/press/bcreg/20081016b.htm}.
+
+\bibitem[Elliott(2010)]{Elliott}
+Douglas~J Elliott.
+\newblock \emph{A primer on bank capital}.
+\newblock Brookings Institution, 2010.
+
+\bibitem[Geithner(2014)]{Geithner}
+Timothy~F Geithner.
+\newblock \emph{{Stress test: Reflections on financial crises}}.
+\newblock Crown, 2014.
+
+\bibitem[{Goldman Sachs}(2008)]{GSBHC}
+{Goldman Sachs}.
+\newblock {Goldman Sachs to Become the Fourth Largest Bank Holding Company},
+  2008.
+\newblock URL
+  \url{http://www.goldmansachs.com/media-relations/press-releases/archived/2008/bank-holding-co.html}.
+
+\bibitem[{Government Accountability Office}(2016)]{GAO}
+{Government Accountability Office}.
+\newblock Troubled asset relief program: Capital purchase program largely has
+  wound down.
+\newblock 2016.
+
+\bibitem[Greenlaw et~al.()Greenlaw, Hatzius, Kashyap, and Shin]{Greenlaw}
+David Greenlaw, Jan Hatzius, Anil~K Kashyap, and Hyun~Song Shin.
+\newblock Leveraged losses: Lessons from the mortgage market meltdown.
+\newblock \emph{U.S. Monetary Policy Form 2008}.
+
+\bibitem[Hoshi and Kashyap(2010)]{Hoshi}
+Takeo Hoshi and Anil~K Kashyap.
+\newblock Will the us bank recapitalization succeed? eight lessons from japan.
+\newblock \emph{Journal of Financial Economics}, 97\penalty0 (3):\penalty0
+  398--417, 2010.
+
+\bibitem[Kacperczyk and Schnabl(2010)]{kacperczyk}
+Marcin Kacperczyk and Philipp Schnabl.
+\newblock When safe proved risky: commercial paper during the financial crisis
+  of 2007--2009.
+\newblock \emph{The Journal of economic perspectives}, 24\penalty0
+  (1):\penalty0 29--50, 2010.
+
+\bibitem[Khan and Vyas(2015)]{Khan}
+Mozaffar Khan and Dushyantkumar Vyas.
+\newblock The capital purchase program and subsequent bank seos.
+\newblock \emph{Journal of Financial Stability}, 18:\penalty0 91--105, 2015.
+
+\bibitem[Larsen(2008)]{UKPlans}
+Peter Larsen.
+\newblock {UK to inject \textsterling 39bn into banks}, 2008.
+\newblock URL
+  \url{http://www.ft.com/cms/s/0/153e175e-9883-11dd-ace3-000077b07658.html}.
+
+\bibitem[Massad(2012)]{MassadExit}
+Timothy Massad.
+\newblock {Winding Down TARP's Bank Programs}, 2012.
+\newblock URL
+  \url{https://www.treasury.gov/connect/blog/Pages/Winding-Down-TARPs-Bank-Programs.aspx}.
+
+\bibitem[{Morrison Foerster}(2008)]{mofo2}
+{Morrison Foerster}.
+\newblock {Update to Treasury's Capital Purchase Program}, 2008.
+\newblock URL
+  \url{http://www.mofo.com/~/media/Files/Resources/Publications/2008/10/Update\%20to\%20Treasurys\%20Capital\%20Purchase\%20Program/Files/081021TreasuryUpdate/FileAttachment/081021TreasuryUpdate.pdf}.
+
+\bibitem[{Morrison Foerster}(2009{\natexlab{a}})]{mofo}
+{Morrison Foerster}.
+\newblock {Capital Assistance Program Public (CAP) Cheat Sheet}.
+\newblock 2009{\natexlab{a}}.
+\newblock URL
+  \url{http://media.mofo.com/docs/pdf/090310CAPPublicCheatSheet.pdf}.
+
+\bibitem[{Morrison Foerster}(2009{\natexlab{b}})]{mofoComp}
+{Morrison Foerster}.
+\newblock {TARP Executive Compensation}, 2009{\natexlab{b}}.
+\newblock URL
+  \url{http://media.mofo.com/docs/pdf/090310ExecutiveCompCheatSheet.pdf}.
+
+\bibitem[{Office of Financial Stability}(2010)]{OFS}
+{Office of Financial Stability}.
+\newblock {Troubled Asset Relief Program: Two Year Retrospective}.
+\newblock 2010.
+\newblock URL
+  \url{https://www.treasury.gov/press-center/news/Documents/TARP\%20Two\%20Year\%20Retrospective_10\%2005\%2010_transmittal\%20letter.pdf}.
+
+\bibitem[Paulson(2008)]{Paulson}
+Hank Paulson.
+\newblock {October 14, 2008 Speech}, 2008.
+\newblock URL
+  \url{http://ftalphaville.ft.com/2008/10/14/17036/paulsons-nine-strong-posse/}.
+
+\bibitem[Paulson(2010)]{paulsonbook}
+Henry Paulson.
+\newblock \emph{On the Brink: Inside the Race to Stop the Collapse of the
+  Global Financial System}.
+\newblock Business Plus, 2010.
+
+\bibitem[Peek and Rosengren(1997)]{Peek}
+Joe Peek and Eric~S Rosengren.
+\newblock The international transmission of financial shocks: The case of
+  japan.
+\newblock \emph{American Economic Review}, 87\penalty0 (4), 1997.
+
+\bibitem[Robinson(2008{\natexlab{a}})]{MUFGMS}
+Gwen Robinson.
+\newblock {MUFG to renegotiate Morgan Stanley deal}, 2008{\natexlab{a}}.
+\newblock URL
+  \url{http://ftalphaville.ft.com/2008/10/13/16948/mufg-to-renegotiate-morgan-stanley-deal/}.
+
+\bibitem[Robinson(2008{\natexlab{b}})]{UKActual}
+Gwen Robinson.
+\newblock {UK launches \textsterling 37bn bank rescue}, 2008{\natexlab{b}}.
+\newblock URL
+  \url{http://www.ft.com/cms/s/0/83bc2cea-98ef-11dd-9d48-000077b07658.html}.
+
+\bibitem[Ross(2016{\natexlab{a}})]{Ross2016a}
+Chase~P. Ross.
+\newblock {The Supervisory Capital Assessment Program}.
+\newblock \emph{Yale Program on Financial Stability Intervention Case},
+  2016{\natexlab{a}}.
+\newblock URL \url{http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2722712}.
+
+\bibitem[Ross(2016{\natexlab{b}})]{Ross2016b}
+Chase~P. Ross.
+\newblock {The Capital Assistance Program}.
+\newblock \emph{Yale Program on Financial Stability Intervention Case},
+  2016{\natexlab{b}}.
+
+\bibitem[{Securities Exchange Commission}(2008)]{shortban}
+{Securities Exchange Commission}.
+\newblock {SEC Halts Short Selling of Financial Stocks to Protect Investors and
+  Markets}, 2008.
+\newblock URL \url{https://www.sec.gov/news/press/2008/2008-211.htm}.
+
+\bibitem[Sorkin(2009)]{Sorkin}
+Andrew~Ross Sorkin.
+\newblock \emph{Too Big to Fail}.
+\newblock Viking, 2009.
+
+\bibitem[Sovereigns(2007)]{IMF2010}
+IMF Sovereigns.
+\newblock Funding, and systemic liquidity.
+\newblock \emph{Global Financial Stability Report}, 2007.
+
+\bibitem[Taliaferro(2009)]{RejectionRates}
+Ryan Taliaferro.
+\newblock How do banks use bailout money? optimal capital structure, new
+  equity, and the tarp.
+\newblock \emph{Optimal Capital Structure, New Equity, and the TARP (December
+  21, 2009)}, 2009.
+
+\bibitem[Treasury(2008{\natexlab{a}})]{CPPInstructions}
+Treasury.
+\newblock {Application Guidelines for TARP Capital Purchase Program},
+  2008{\natexlab{a}}.
+\newblock URL
+  \url{https://www.treasury.gov/initiatives/financial-stability/TARP-Programs/bank-investment-programs/cap/Documents/application-guidelines.pdf}.
+
+\bibitem[Treasury(2008{\natexlab{b}})]{CPPFaq}
+U.S. Treasury.
+\newblock {Process-Related FAQs for Capital Purchase Program}.
+\newblock 2008{\natexlab{b}}.
+\newblock URL
+  \url{https://www.treasury.gov/press-center/press-releases/Documents/faqcpp.pdf}.
+
+\bibitem[Treasury(2008{\natexlab{c}})]{CPPTerms}
+U.S. Treasury.
+\newblock {TARP Capital Purchase Program, Senior Preferred Stock and Warrants.
+  Summary of Senior Preferred Terms}.
+\newblock 2008{\natexlab{c}}.
+\newblock URL
+  \url{https://www.treasury.gov/press-center/press-releases/Documents/document5hp1207.pdf}.
+
+\bibitem[Treasury(2009)]{CAPTerms}
+U.S. Treasury.
+\newblock {U.S. Treasury Releases Terms of Capital Assistance Program}.
+\newblock 2009.
+\newblock URL
+  \url{https://www.treasury.gov/press-center/press-releases/Pages/tg40.aspx}.
+
+\bibitem[{U.S. Treasury}(2008)]{CPPAnnouncement}
+{U.S. Treasury}.
+\newblock {Treasury Announces TARP Capital Purchase Program Description}, 2008.
+\newblock URL
+  \url{https://www.treasury.gov/press-center/press-releases/Pages/hp1207.aspx}.
+
+\bibitem[{U.S. Treasury}(2016)]{ProgramStatus}
+{U.S. Treasury}.
+\newblock {Capital Purchase Program Program Status}, 2016.
+\newblock URL
+  \url{https://www.treasury.gov/initiatives/financial-stability/TARP-Programs/bank-investment-programs/cap/Pages/payments.aspx}.
+
+\end{thebibliography}

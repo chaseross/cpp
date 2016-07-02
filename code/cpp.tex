@@ -15,7 +15,9 @@
 \usepackage{soul}
 \usepackage[gen]{eurosym}
 \usepackage{graphicx}
-
+\usepackage{enumitem}
+\setlist[enumerate]{itemsep=0mm}
+\setlist[itemize]{itemsep=0mm}
 \usepackage{fancyhdr}
 \usepackage{authblk}
 \usepackage{lineno}
@@ -315,7 +317,7 @@ url    = {https://www.treasury.gov/press-center/news/Documents/TARP\%20Two\%20Ye
 }
 
 @misc{MassadExit,
-  title={{ Winding Down TARP's Bank Programs}},
+  title={{Winding Down TARP's Bank Programs}},
   author={Massad, Timothy},
   year={2012},
     url   = {https://www.treasury.gov/connect/blog/Pages/Winding-Down-TARPs-Bank-Programs.aspx},
@@ -327,6 +329,31 @@ url    = {https://www.treasury.gov/press-center/news/Documents/TARP\%20Two\%20Ye
   year={2016}
 }
 
+@misc{ProgramStatus,
+  title={{Capital Purchase Program Program Status}},
+  author={{U.S. Treasury}},
+  year={2016},
+    url   = {https://www.treasury.gov/initiatives/financial-stability/TARP-Programs/bank-investment-programs/cap/Pages/payments.aspx},
+}
+
+@article{Ba,
+  title={Assessing tarp},
+  author={Bayazitova, Dinara and Shivdasani, Anil},
+  journal={Review of Financial Studies},
+  volume={25},
+  number={2},
+  pages={377--407},
+  year={2012},
+  publisher={Soc Financial Studies}
+}
+
+@misc{SmallRepay,
+  title={{Four Small Banks Are the First to Pay Back TARP Funds}},
+  author={Dash, Eric},
+  year={2009},
+    publisher={The New York Times},	
+    url   = {http://nyti.ms/29aFjv3},
+}
 
 
 \end{filecontents}
@@ -388,7 +415,9 @@ Policymakers feared stigma surrounding the CPP would prevent the firms which nee
 
 Hank Paulson, the US Treasury Secretary, invited the leaders of the major nine U.S. banks\footnote{These banks included JP Morgan, Bank of America, Citigroup, Wells Fargo, Goldman Sachs, Morgan Stanley, Merrill Lynch (although Bank of America was acquiring it), State Street and Bank of New York Mellon.} to meet on Monday October 13. Treasury did not select the banks invited to this initial CPP meeting; consistent with the final design of the CPP which called for each banks' application to be approved and overseen by their relevant federal banking regulator (FBR), the New York Fed and the OCC selected the banks. Regulators chose the banks based on their systemic importance rather than business line -- the banks included the four largest commercial banks, three investment banks\footnote{Bank of America had  agreed to purchase Merrill Lynch on September 15, 2008 with the transaction closing in the first quarter of 2009. Additionally, both Morgan Stanley and Goldman Sachs converted from independent investment banks to bank holding companies on September 21. The two converted to BHCs for similar reasons: the ``market views oversight by the Federal Reserve and the ability to source insured bank deposits as providing a greater degree of safety and soundness... [Goldman Sachs] view[s] regulation by the Federal Reserve Board as appropriate and in the best interest of protecting and growing our franchise across our diverse range of businesses.'' \citep{GSBHC}.} and two clearing and settlement banks with systemic importance to underlying financial infrastructure.  
 
-Some bank leaders were reluctant to take the capital, but ultimately agreed to take the capital -- even if they initially felt it was unnecessary. The CPP funds and the FDIC guarantee of new wholesale bank debt were a joint package, banks could not choose one or the other. \citep{Geithner}. At its core, the program depended on whether the strongest and most systematically important banks would join the program, and by calling the leaders of these banks together regulators were able to convince them of the value of participation. Table~\ref{columbusDay} lists the amount of capital investment in each of the nine banks as determined on Columbus Day. Even before formal announcement of the terms, leaks had emerged about the nature of the meeting and markets responded positively -- the S\&P had its largest one day point increase to date. The program was formally announced the next day on October 14, 2008. The press statement announcing the program noted, ``Nine large financial institutions already have agreed to participate in this program, moving quickly and collectively to signal the importance of the program for the system. These healthy institutions have voluntarily agreed to participate on the same terms that will be available to small and medium-sized banks and thrifts across the nation.'' \citep{CPPAnnouncement}. In sum, Treasury allocated \$250 billion from TARP to the CPP, with \$125 billion allocated to the first nine banks and the remainder available through the application-based program.
+Some bank leaders were reluctant to take the capital, but ultimately agreed to take the capital -- even if they initially felt it was unnecessary. The CPP funds and the FDIC guarantee of new wholesale bank debt were a joint package, banks could not choose one or the other. \citep{Geithner}. At its core, the program depended on whether the strongest and most systematically important banks would join the program, and by calling the leaders of these banks together regulators were able to convince them of the value of participation. Table~\ref{columbusDay} lists the amount of capital investment in each of the nine banks as determined on Columbus Day. 
+
+A day before the CPP's announcement on October 14, Assistant Secretary Neel Kashkari announced that Treasury would pursue a standardized program to purchase equity across a wide set of financial institutions. \citep{Ba}. Thus, leaks emerged about the nature of the meeting and markets responded positively -- the S\&P had its largest one day point increase to date. The program was formally announced the next day on October 14, 2008. The press statement announcing the program noted, ``Nine large financial institutions already have agreed to participate in this program, moving quickly and collectively to signal the importance of the program for the system. These healthy institutions have voluntarily agreed to participate on the same terms that will be available to small and medium-sized banks and thrifts across the nation.'' \citep{CPPAnnouncement}. In sum, Treasury allocated \$250 billion from TARP to the CPP, with \$125 billion allocated to the first nine banks and the remainder available through the application-based program.
 
 The following summarizes the key features of the CPP program, which are discussed in detail below:\footnote{See \citet{mofo}.}
 
@@ -441,7 +470,7 @@ The CPP can be separated into the first 9 banks' participation and the applicati
 \item After deciding to participate, an applying QFI consults with its primary federal banking regulator as it completes the application using the most recent supervisory reports available, along with any material changes in the firm's financial condition as the program was only available to ``viable'' QFIs. \citep{CPPFaq}. 
 \item QFI submits the application to their primary federal banking regulator. The primary federal banking regulator then rejects or approves the application and recommends the QFI for the CPP to Treasury. 
 \item Any QFI with limitations on the issuance of preferred securities or with similar limitations had to submit additional information on these limitations. 
-\item Treasury accepts or rejects the QFIs application ``giving considerable weight to the recommendation of the primary federal banking regulator.'' 
+\item Treasury's Investment Committee recommends or does not recommend investment to the Assistant Treasury Secretary for Financial Stability whose final decision accepts or rejects the QFIs application ``giving considerable weight to the recommendation of the primary federal banking regulator.'' 
 \item Finally, the QFI could accept or reject the Treasury's capital investment.
 \end{enumerate}
 
@@ -455,7 +484,7 @@ As Treasury began to wind down its CPP portfolio, Treasury had three options: wa
 
 \paragraph{Repayment}
 
-Consistent with the characteristics of high quality capital, Treasury did not require CPP firms to repay their capital investments at any specific time frame. Instead, firms repaid when they felt appropriate. In practice, many of the largest banks repaid their CPP investments through 2009, either as a response to the various TARP limits involved with the program or because of some amount of stigma surrounding the program. As of February 2016, 261 firms had repaid their CPP investments in full.
+Consistent with the characteristics of high quality capital, Treasury did not require CPP firms to repay their capital investments at any specific time frame. Instead, firms repaid when they felt appropriate. In practice, many of the largest banks repaid their CPP investments through 2009, either as a response to the various TARP limits involved with the program or because of some amount of stigma surrounding the program. As of February 2016, 261 firms had repaid their CPP investments in full.\footnote{This includes firms that refinanced \$2.21 billion in CPP investments through the Small Business Lending Fund (SBLF) and \$360 million in exchanges of CPP investments with the Community Development Capital Initiative. \citep{ProgramStatus}.}
 
 \paragraph{Restructuring}
 
@@ -467,28 +496,42 @@ Treasury's third option was to sell its CPP securities through auctions. Auction
 
 In pooled auctions, a single bidder was allocated all auctioned securities. In single institution auctions, many bidders were allocated portions of the auctioned securities at the single clearing price. As of February 2016, Treasury led 28 auctions for 190 CPP institutions yielding \$3.04 billion in proceeds. This amounts to about 80\% of the face value of the CPP investments. 
 
+\subsection{Outcomes} 
 
-
-
-%%%% START AT OUTCOMES
-\subsection{Outcomes}
-After its final investment in December 2009, the CPP provided about \$205 billion in capital to 707 financial institutions. Figure~\ref{figure1} shows that the initial announcement of the CPP decreased the probability of bankruptcy for the largest banks.
-
-
-Many banks turned down CPP funds after Treasury approval, so CPP funds were viewed as relatively costly. 
-By December 9, 2008, Treasury had only used \$205 billion  (of \$250 billion initial commitment) in 742 transactions involving 707 financial institutions.
-Tier 1 ratios increased from 10.9\% to 13.8\%, although aggregate common equity fell due to further credit losses and write-downs.
-The largest firms repaid preferred investment by June and purchased warrants by August 2009.
-Of 707 institutions: 
-\begin{itemize}
-\item 260 full repayments
-\item 190 auctioned investments
-\item 32 bankruptcy/receivership
-\item 17 remain 
+By December 9, 2008, Treasury used \$204.9 billion in 742 transactions involving 707 financial institutions, less than the initial outlay of \$250 billion. Some banks turned down CPP funds after receiving approval from Treasury, and these banks had higher quality assets or were in better performing regions of the country. This suggests stronger banks viewed the CPP as costly. \citep{Ba}. As of February 2016, the status of the CPP is as follows: repayments of \$199.6 billion, write-downs of \$5.1 billion, \$300 million of outstanding investments, and \$27.1 billion of total income. In sum, Treasury recovered \$226.7 billion, as of February 2016.  Figure~\ref{outcome} provides further breakdowns of the program status to date. Of the 707 financial institutions with CPP investments: 
+\begin{itemize}[label={--}]
+\item Full repayment: 261 
+\item Sold at auction: 190 
+\item Refinanced through the Small Business Lending Fund or Community Development Capital Initiative: 165 
+\item Restructured through non-auction sales: 39 
+\item Bankruptcy/Receivership: 32 
+\item Merged with other CPP institutions: 4
+\item Remain in program: 16 (as of February 2016)
 \end{itemize}
-Total recovered: \$226.7 billion
+\citep{GAO}
+The program skewed to larger firms: the 9 largest institutions ultimately accounted for \$134.2 billion and 331 of the 707 recipients received CPP investments below \$10 million. Firms took, on average, 2.9 percent of RWA in capital suggesting that participating firms maximized the capital they could receive from the program. Although Tier 1 capital ratios increased from 10.9 percent to 13.8 percent after the CPP investments, the aggregate amount of tangible common equity fell due to mounting credit losses and write-downs. \citep{Ba}. 
 
-14 institutions remain; expected to exit via (mostly) restructuring.
+Four small banks repaid their CPP investments on March 31, 2009 and were the first set of banks to repay CPP investments. The banks cited concerns about stigma associated with the program as well as TARP's compensation limitations. \citep{SmallRepay}. \citet{Ba} compile a sample of 590 publicly traded banks with annual and quarterly financial statements and information on executive compensation; they find that 95 banks had announced their intention to repay their CPP investments by November 2009. The largest firms repaid preferred investment by June and purchased warrants by August 2009. Of the 14 remaining remaining in the program, Treasury expects most of the institutions will exit through restructuring. 
+
+It is not possible to isolate the effect of the CPP on the banking system due to the number of simultaneous programs and events, particularly over the Columbus Day Weekend. However, it is clear that the CPP's announcement on October 14 was coincided with material tightening in both Ted spreads, as seen in Figure~\ref{ted}, and large-cap bank CDS spreads, as seen in Figure~\ref{cds}. However, the CPP did not resolve market concerns surrounding the underlying health of the banking system as in February 2009 US policymakers embarked on a stress test of the 19 largest BHCs with a public capital backstop available to the BHCs found to have insufficient capital. The capital backstop, the Capital Assistance Program (CAP), was structured very similarly to the CPP and was similarly available to all QFIs in the US. The CPP and the CAP differed because the CAP came with a 9 percent dividend (rather than 5 percent ratcheting to 9 percent after 5 years), and after 7 years the CAP preferred share mandatorily converted to common equity. The CPP had no option for conversion to common. The stress test which accompanied the CAP, called the Supervisory Capital Assessment Program (SCAP), concluded in May 2009. The SCAP publicly disclosed bank specific line-by-line exposures and expected losses under a severely adverse scenario, finding 10 firms required an additional \$75 billion. Ultimately, the market viewed the SCAP as credible and sufficiently stressful and marked a turning point in the financial crisis. \citep{Bernanke} and \citep{Geithner} 9 of the 10 firms found capital privately, and the remaining firm (GMAC) received public capital through a separate capital program available to the automotive industry, the Automotive Industry Financing Program. \citep{OFR}. Thus, the CAP was never used.\footnote{See \citet{Ross2016a} for additional information on the SCAP and \citet{Ross2016b} for additional information on the CAP.}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 \section{Key Design Decisions}
@@ -499,9 +542,13 @@ Total recovered: \$226.7 billion
 
 The CAP, consistently with the SCAP, used the same definition of QFI as defined for the purposes of the CPP as unveiled in the fall of 2008. Notably, this excluded foreign institutions and U.S. branches or agencies of foreign institutions. This is largely due to the fact that foreign bank branches and agencies have no capital of their own and are subject to a different set of regulatory requirements than depository institutions in the US. Therefore, it is not possible to stress test their capital adequacy. \footnote{For further discussion of Federal Reserve regulation of foreign institutions, see \url{https://www.newyorkfed.org/aboutthefed/fedpoint/fed26.html}.}
 
+\subsection{The CPP boosted Tier 1 capital, but not tangible common equity.}
+
+\subsection{The CPP dividend started at 5 percent, and increased to 9 percent after 5 years.}
+
 \section{Evaluation}
 
-Which banks participated in the CPP? The banks that needed the capital the most received funding and strongest banks opted out $\rightarrow$ adverse signaling appeared to be minimized. Bayazitova (2012) finds Treasury was most likely to accept applications from larger banks with greater systemic risks; Treasury did not provide capital to banks with high levels of troubled assets. 
+Many banks turned down CPP funds after Treasury approval, so CPP funds were viewed as relatively costly.  Which banks participated in the CPP? The banks that needed the capital the most received funding and strongest banks opted out $\rightarrow$ adverse signaling appeared to be minimized. Bayazitova (2012) finds Treasury was most likely to accept applications from larger banks with greater systemic risks; Treasury did not provide capital to banks with high levels of troubled assets. 
 
 Taliaferro (2009) estimates FDIC's rejection rate at 11\%, Fed's between 20-39\%.
 
@@ -694,23 +741,27 @@ State Street &  \$2 billion &\tabularnewline
 \end{longtable}
 \end{table}
 
-
-
-\begin{figure}[h]
-\caption{CPP reduced the probability of default for large banks}\label{figure1}
-\centering
-\includegraphics[width=\textwidth]{CDS.pdf}
-\raggedright
-\footnotesize Source: Bloomberg.
-\end{figure}
-
-
-
-
 \begin{figure}[h]
 \caption{Exit Types by Year}\label{exits}
 \centering
 \includegraphics[width=\textwidth]{Exits.pdf}
+\raggedright
+\footnotesize Source: Bloomberg.
+\end{figure}
+
+\begin{figure}[h]
+\caption{CPP Status, June 2016}\label{outcome}
+\centering
+\includegraphics[width=\textwidth]{outcome.pdf}
+\raggedright
+\footnotesize Source: \citet{GAO}. 
+\end{figure}
+
+
+\begin{figure}[h]
+\caption{CPP and Large Banks' CDS Spreads}\label{figure1}
+\centering
+\includegraphics[width=\textwidth]{CDS.pdf}
 \raggedright
 \footnotesize Source: Bloomberg.
 \end{figure}
