@@ -330,7 +330,7 @@ url    = {https://www.treasury.gov/press-center/news/Documents/TARP\%20Two\%20Ye
 }
 
 @misc{ProgramStatus,
-  title={{Capital Purchase Program Program Status}},
+  title={{Capital Purchase Program, Program Status}},
   author={{U.S. Treasury}},
   year={2016},
     url   = {https://www.treasury.gov/initiatives/financial-stability/TARP-Programs/bank-investment-programs/cap/Pages/payments.aspx},
@@ -355,6 +355,30 @@ url    = {https://www.treasury.gov/press-center/news/Documents/TARP\%20Two\%20Ye
     url   = {http://nyti.ms/29aFjv3},
 }
 
+@misc{TIP,
+  title={{Targeted Investment Program, Program Purpose and Overview}},
+  author={{U.S. Treasury}},
+  year={2008},
+    url   = {https://www.treasury.gov/initiatives/financial-stability/TARP-Programs/bank-investment-programs/tip/Pages/default.aspx},
+}
+
+@article{Diamond,
+  title={Fear of fire sales and the credit freeze},
+  author={Diamond, Douglas W and Rajan, Raghuram G},
+  year={2009},
+  institution={National Bureau of Economic Research}
+}
+
+@article{Gift,
+  title={Paulson's gift},
+  author={Veronesi, Pietro and Zingales, Luigi},
+  journal={Journal of Financial Economics},
+  volume={97},
+  number={3},
+  pages={339--368},
+  year={2010},
+  publisher={Elsevier}
+}
 
 \end{filecontents}
 % -------------------------------
@@ -375,7 +399,7 @@ url    = {https://www.treasury.gov/press-center/news/Documents/TARP\%20Two\%20Ye
 \maketitle
 
 \begin{abstract}
-On October 14, 2008 US policymakers announced a plan to purchase preferred shares in stressed US banks and financial institutions to ensure the US banking system had sufficient capital to withstand 
+On October 14, 2008 US policymakers announced a plan to purchase preferred shares in stressed US banks and financial institutions to ensure the US banking system had sufficient capital to withstand further economic deterioration. Using \$250 billion in capital from the Toxic Asset Relief Program (TARP), policymakers ultimately injected \$205 billion into 707 U.S. financial institutions through preferred shares. 
 \newline
 \newline
 \textbf{JEL Classification}: G01, G28, G20, H12, H81
@@ -513,30 +537,19 @@ The program skewed to larger firms: the 9 largest institutions ultimately accoun
 
 Four small banks repaid their CPP investments on March 31, 2009 and were the first set of banks to repay CPP investments. The banks cited concerns about stigma associated with the program as well as TARP's compensation limitations. \citep{SmallRepay}. \citet{Ba} compile a sample of 590 publicly traded banks with annual and quarterly financial statements and information on executive compensation; they find that 95 banks had announced their intention to repay their CPP investments by November 2009. The largest firms repaid preferred investment by June and purchased warrants by August 2009. Of the 14 remaining remaining in the program, Treasury expects most of the institutions will exit through restructuring. 
 
-It is not possible to isolate the effect of the CPP on the banking system due to the number of simultaneous programs and events, particularly over the Columbus Day Weekend. However, it is clear that the CPP's announcement on October 14 was coincided with material tightening in both Ted spreads, as seen in Figure~\ref{ted}, and large-cap bank CDS spreads, as seen in Figure~\ref{cds}. However, the CPP did not resolve market concerns surrounding the underlying health of the banking system as in February 2009 US policymakers embarked on a stress test of the 19 largest BHCs with a public capital backstop available to the BHCs found to have insufficient capital. The capital backstop, the Capital Assistance Program (CAP), was structured very similarly to the CPP and was similarly available to all QFIs in the US. The CPP and the CAP differed because the CAP came with a 9 percent dividend (rather than 5 percent ratcheting to 9 percent after 5 years), and after 7 years the CAP preferred share mandatorily converted to common equity. The CPP had no option for conversion to common. The stress test which accompanied the CAP, called the Supervisory Capital Assessment Program (SCAP), concluded in May 2009. The SCAP publicly disclosed bank specific line-by-line exposures and expected losses under a severely adverse scenario, finding 10 firms required an additional \$75 billion. Ultimately, the market viewed the SCAP as credible and sufficiently stressful and marked a turning point in the financial crisis. \citep{Bernanke} and \citep{Geithner} 9 of the 10 firms found capital privately, and the remaining firm (GMAC) received public capital through a separate capital program available to the automotive industry, the Automotive Industry Financing Program. \citep{OFR}. Thus, the CAP was never used.\footnote{See \citet{Ross2016a} for additional information on the SCAP and \citet{Ross2016b} for additional information on the CAP.}
+It is not possible to isolate the effect of the CPP on the banking system due to the number of simultaneous programs and events, particularly over the Columbus Day Weekend. However, it is clear that the CPP's announcement on October 14 was coincided with material tightening in both Ted spreads, as seen in Figure~\ref{ted}, and large-cap bank CDS spreads, as seen in Figure~\ref{CDS}. 
 
+However, the CPP did not resolve market concerns surrounding the underlying health of the banking system as in February 2009 US policymakers embarked on a stress test of the 19 largest BHCs with a public capital backstop available to the BHCs found to have insufficient capital. The capital backstop, the Capital Assistance Program (CAP), was structured very similarly to the CPP and was similarly available to all QFIs in the US. 
 
+The CPP and the CAP differed because the CAP came with a 9 percent dividend (rather than 5 percent ratcheting to 9 percent after 5 years), and after 7 years the CAP preferred share mandatorily converted to common equity. The CPP had no option for conversion to common. The stress test which accompanied the CAP, called the Supervisory Capital Assessment Program (SCAP), concluded in May 2009. The SCAP publicly disclosed bank specific line-by-line exposures and expected losses under a severely adverse scenario, finding 10 firms required an additional \$75 billion. Ultimately, the market viewed the SCAP as credible and sufficiently stressful and marked a turning point in the financial crisis. \citep{Bernanke} and \citep{Geithner} 9 of the 10 firms found capital privately, and the remaining firm (GMAC) received public capital through a separate capital program available to the automotive industry, the Automotive Industry Financing Program. \citep{Ross2016a}. Thus, the CAP was never used.\footnote{See \citet{Ross2016a} for additional information on the SCAP and \citet{Ross2016b} for additional information on the CAP.} Figure~\ref{CDS} shows CDS spreads over time during the CPP, CAP, and SCAP.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-\section{Key Design Decisions}
+\section{Key Design Decisions} 
 
 \subsection{The CPP preferred shares were not convertible to common equity, unlike the CAP.}
+
+\subsection{The CPP bought equity and not assets.}
+
+\subsection{The CPP and the debt guarantee program were only available together and not separately.}
 
 \subsection{Foreign financial institutions were ineligible for the CAP.}
 
@@ -548,13 +561,23 @@ The CAP, consistently with the SCAP, used the same definition of QFI as defined 
 
 \section{Evaluation}
 
-Many banks turned down CPP funds after Treasury approval, so CPP funds were viewed as relatively costly.  Which banks participated in the CPP? The banks that needed the capital the most received funding and strongest banks opted out $\rightarrow$ adverse signaling appeared to be minimized. Bayazitova (2012) finds Treasury was most likely to accept applications from larger banks with greater systemic risks; Treasury did not provide capital to banks with high levels of troubled assets. 
+\citet{Hoshi} compare the CPP with capital injection programs in Japan in the 1990s. In the Japanese experience, \citet{Hoshi} finds that banks may refuse capital injections. First, accepting capital injections may signal that the firms will have higher-than-expected future losses, and therefore the market would punish existing shareholders. Second, banks may refuse because the new government claims would be senior to existing equity claims. Existing shareholders would see no benefit until after the government had been repaid, and, if the bank had debt trading at a large discount, the capital injection's value would accrue to debt holders. The reduced upside to common shareholders therefore reduces their willingness to participate in such a program. The CPP's use of preferred shares were vulnerable to this situation. 
 
-Taliaferro (2009) estimates FDIC's rejection rate at 11\%, Fed's between 20-39\%.
+\citet{Hoshi} additionally lays out a set of lessons to be learned from the Japanese experience and compares these to the US experience. They find that -- like the Japanese -- US regulators were reluctant to nationalize and wind-down the least healthy banks, citing that both Bank of America and Citigroup needed large capital injections 2 months after the CPP injections.\footnote{These injections, called the Targeted Investment Program (TIP), provided \$20 billion to each Citigroup and Bank of America in December 2008. ``The progrma gave Treasury the necessary flexibility to provide additional or new funding to financial institutions that were critical to the functioning of the financial system.'' Both institutions repaid their TIP investments in full with accrued dividends, yielding a positive return of \$4.4 billion for Treasury. \citep{TIP}.} However, they note the lack of feasible resolution policies for complex financial institutions as a reason why regulators did not choose to wind down any institutions: particularly, the inability for the government to take over an institution and continue to service swap agreements. ``Had the U.S. tried to buy Citigroup and push it through bankruptcy using the existing law it would have been operating in unchartered territory.'' \citep{Hoshi}.\footnote{Further, they note that Japanese legislators explicitly passed laws which allowed for the wind-down of major financial institutions, and used it in at least two significant cases.} 
 
-Veronesi and Zingales (2009) find CPP resulted in a \$84-107 billion net benefit to taxpayer, mostly due to reductions in the probability of bankruptcy. 
+\citet{Diamond} describes that danger from leaving toxic assets on weak firms' balance sheets: fire-sales depress asset prices below fundamental valuations and distort the incentive for healthy banks to continue lending and instead compel healthy banks to horde capital to protect against the fire-sales. \citet{Hoshi} note that sufficiently well-capitalized banks can reduce the likelihood of a fire-sale as they take the other side and prevent prices from falling so far from fundamental values: ``we see the uncertainty over asset quality being intimately tied to the size of the capital shortage.'' 
 
-CPP may have prolonged banking recovery; CPP preferred was only buffered by common equity, so we needed SCAP to certify TCE as adequate. 
+\citet{Hoshi} also note that US policymakers successful avoided requiring banks to provide credit to certain companies, demographics or industries.\footnote{The support for the auto industry is an exception, however, the CPP did not incentive the creation of ``financial zombie companies.''} However, in response to political concerns surrounding how banks used the CPP funds, Treasury issued a number of ``Use of Capital'' reports which asked banks to provide information for public disclosure.\footnote{See, for example, the 2009 Use of Capital Survey: \url{https://www.treasury.gov/initiatives/financial-stability/TARP-Programs/bank-investment-programs/cap/use-of-capital/Pages/2009.aspx}.} \citep{Bernanke}. 
+
+\citet{Ba} compile a sample of 590 publicly traded banks with annual and quarterly financial statements and information on executive compensation and study which banks and under what circumstances banks were most likely to participate in the CPP. First, they find that CPP was viewed by banks as relatively costs because many of the strongest banks refrained from participating. The banks with strong capital ratios, stable funding profiles, high average asset quality and operating in better performing regions were less likely to participate in the CPP. However, weaker banks did indeed participate, suggesting the CPP managed stigma. 
+
+Second, \citet{Ba} finds Treasury was most likely to accept applications from larger banks with greater systemic risks rather than the banks with high levels of troubled assets.  In their sample of public banks, they also find many banks which received approval for participation from Treasury but ultimately decided to withdraw their application, suggesting  CPP capital was viewed as relatively costly. However, banks which announced their approval for CPP funds and later decided to not use the funds experienced no significant change in equity prices; rather, the largest gains associated with the CPP came when the program was initially announced and now when a bank was specifically approved by Treasury for the funds. They also find that compensation limits related to the CPP played an important role in whether a bank used CPP funds and also on their subsequent repayment. 
+
+Finally, \citet{Ba} suggests the CPP may have slowed the banking system's recovery because the CPP used preferred shares and the only buffer protecting the government's claim was common equity holders. Therefore, market analysts paid close attention to banks' tangible common equity as an indication of the likelihood the government would nationalize a bank. The SCAP -- the stress test conducted between February and May 2009 -- certified a bank's capital adequacy and reassured investors of the government's intentions with respect to protecting its CPP preferred investment and valuations of bank stocks accordingly responded positively in May 2009. 
+
+\citet{Gift} find Columbus Day weekend capital injections resulted in a \$84-107 billion net benefit to taxpayer, mostly due to reductions in the probability of bankruptcy which they estimated would have destroyed roughly one-fourth of the enterprise value of the involved banks. To calculate the net benefit, they measure the difference-in-difference between the the banks' CDS rates and of GE capital -- a large non-bank financial company that did not participate in the CPP. By this measure, the Columbus Day intervention increased debt by \$119 billion, which added to the abnormal change in bank common and preferred equity, measures the enterprise value of the involved banks increased by \$128 billion. The FDIC deposit guarantee of derivative liabilities increases this to \$131 billion. Subtracting the difference of capital injection from the value of the preferred equity and warrants given to Treasury, yields a net benefit between \$84 billion and \$107 billion; even if the deadweight loss of taxation is 30 percent, the Columbus Day injections still have a positive value of between \$71 billion and 89 billion. \citet{Gift} note that because ``all the major banks were ``forced'' to participate by a very strong arm-twisting exercise by Treasury Secretary Paulson'' the first 9 banks likely did not benefit from any certification effect about the value of assets they held. Rather, they measure that most of the net benefit from two effects: first, the negative effect of uncertainty surrounding how the government would interfere with the bank's management; and second, the positive effect of the lowered likelihood of probability. 
+
+Finally, \citet{Gift} compares the actual CPP Columbus Day intervention with four alternatives: the original asset purchase plan, the original asset purchase program at above-market premiums, the British intervention without any debt-guarantees, and a debt-for-equity swap. They find the debt-for-equity swap the most attractive plan, as it does not require valuation of existing assets. Of the three former plans, they find the Columbus Day injection was a good balance of up-front cost and the value at risk, with much of the value of the program coming from the economical debt guarantee program. They find that equity injections without the guarantee would have been roughly twice as expensive. They find it would have taken between \$3.1 trillion and \$4.6 trillion in asset purchases to reduce CDS rates as much as the Columbus Day injections. Finally, they find the original asset purchase program revised to overpay by 20 percent would cost about \$1 trillion to reduce CDS rates as much as the actual injections. 
 
 \paragraph{Auctions}
 
@@ -759,7 +782,7 @@ State Street &  \$2 billion &\tabularnewline
 
 
 \begin{figure}[h]
-\caption{CPP and Large Banks' CDS Spreads}\label{figure1}
+\caption{CPP and Large Banks' CDS Spreads}\label{CDS}
 \centering
 \includegraphics[width=\textwidth]{CDS.pdf}
 \raggedright
