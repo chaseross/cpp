@@ -13,6 +13,7 @@
 \usepackage{amssymb, amsmath, amsfonts}
 \usepackage{outlines}
 \usepackage{soul}
+\usepackage{textcomp}
 \usepackage[gen]{eurosym}
 \usepackage{graphicx}
 \usepackage{enumitem}
@@ -141,7 +142,7 @@ url    = {https://www.treasury.gov/press-center/news/Documents/TARP\%20Two\%20Ye
 
 
 @article{Andrews,
-  title={{U.S. May Convert Banks’ Bailouts to Equity Share}},
+  title={{U.S. May Convert Banks' Bailouts to Equity Share}},
   author={Andrews, Edmund L.},
   year={2009},
   publisher={The New York Times},
@@ -316,6 +317,14 @@ url    = {https://www.treasury.gov/press-center/news/Documents/TARP\%20Two\%20Ye
     url   = {http://media.mofo.com/docs/pdf/090310ExecutiveCompCheatSheet.pdf},
 }
 
+@misc{mofoCap,
+  title={{Capital Alternatives for Financial Institutions: Treasury's TARP Capital Purchase Program}},
+  author={{Morrison Foerster}},
+  year={2009},
+    url   = {http://media.mofo.com/docs/pdf/0903CaPPOverview.pdf},
+}
+
+
 @misc{MassadExit,
   title={{Winding Down TARP's Bank Programs}},
   author={Massad, Timothy},
@@ -380,6 +389,17 @@ url    = {https://www.treasury.gov/press-center/news/Documents/TARP\%20Two\%20Ye
   publisher={Elsevier}
 }
 
+@article{GW,
+  title={Valuing the Treasury's capital assistance program},
+  author={Glasserman, Paul and Wang, Zhenyu},
+  journal={Management Science},
+  volume={57},
+  number={7},
+  pages={1195--1211},
+  year={2011},
+  publisher={INFORMS}
+}
+
 \end{filecontents}
 % -------------------------------
 
@@ -435,7 +455,7 @@ This case divides the CPP into three distinct phases: the initial round of capit
 
 Following the tumultuous week of October 6 -- the worst week for the S\&P since 1933, as well as notable stresses on Morgan Stanley and AIG -- regulators decided they needed to do something ``dramatic.'' \citep{paulsonbook}. Policymakers had little time to develop a plan. In addition to developing a new wholesale bank debt guarantee program, former President of the New York Federal Reserve Timothy F. Geithner noted ``Treasury and Fed officials'] other challenge that weekend was to figure out the structure of capital investments--what kind of capital, who would get it, how to price it, and so forth. This would be the most sweeping government intervention in the private markets since the 1930s, and we had two days to design it.'' \citep{Geithner}. The plan they ultimately developed was similar to one used in the UK, capital injections through preferred shares alongside a guarantee\footnote{This guarantee was the Debt Guarantee Program (DGP), itself one of two components of the Temporary Liquidity Guarantee Program (TGLP). The second component was the Transaction Account Guarantee Program (TAGP). See the Yale Program on Financial Stability 's paper on the program: [tk]. See also:  \url{https://www.fdic.gov/regulations/resources/tlgp/}.} on new wholesale bank debt; in fact, US policymakers had received a copy of the UK's capital plan beforehand and found the terms to be more punitive than the US plan called for. \citep{paulsonbook}. 
 
-Policymakers feared stigma surrounding the CPP would prevent the firms which needed capital from using the program. The UK program was voluntary and only the weaker firms accepted capital -- Barclays, for example, refrained from participation -- and markets punished those weak firms. However, no US regulator had the ability to compel private financial institutions to accept government capital. To address this, the CPP came with a 5\% dividend for the first five years which regulators hoped was cheap enough to get all nine banks to participate. Further, to persuade the most important banks to join the program and therefore prevent the program from being stigmatized, policymakers arranged a meeting between the heads of the relevant regulatory agencies with the leaders of the most systemically important banks.  
+Policymakers feared stigma surrounding the CPP would prevent the firms which needed capital from using the program. The UK program was voluntary and only the weaker firms accepted capital -- Barclays, HSBC, and Standard Chartered refrained from participation -- and markets punished those weak firms. However, no US regulator had the ability to compel private financial institutions to accept government capital. To address this, the CPP came with a 5\% dividend for the first five years which regulators hoped was cheap enough to get all nine banks to participate. Further, to persuade the most important banks to join the program and therefore prevent the program from being stigmatized, policymakers arranged a meeting between the heads of the relevant regulatory agencies with the leaders of the most systemically important banks.  
 
 Hank Paulson, the US Treasury Secretary, invited the leaders of the major nine U.S. banks\footnote{These banks included JP Morgan, Bank of America, Citigroup, Wells Fargo, Goldman Sachs, Morgan Stanley, Merrill Lynch (although Bank of America was acquiring it), State Street and Bank of New York Mellon.} to meet on Monday October 13. Treasury did not select the banks invited to this initial CPP meeting; consistent with the final design of the CPP which called for each banks' application to be approved and overseen by their relevant federal banking regulator (FBR), the New York Fed and the OCC selected the banks. Regulators chose the banks based on their systemic importance rather than business line -- the banks included the four largest commercial banks, three investment banks\footnote{Bank of America had  agreed to purchase Merrill Lynch on September 15, 2008 with the transaction closing in the first quarter of 2009. Additionally, both Morgan Stanley and Goldman Sachs converted from independent investment banks to bank holding companies on September 21. The two converted to BHCs for similar reasons: the ``market views oversight by the Federal Reserve and the ability to source insured bank deposits as providing a greater degree of safety and soundness... [Goldman Sachs] view[s] regulation by the Federal Reserve Board as appropriate and in the best interest of protecting and growing our franchise across our diverse range of businesses.'' \citep{GSBHC}.} and two clearing and settlement banks with systemic importance to underlying financial infrastructure.  
 
@@ -543,21 +563,43 @@ However, the CPP did not resolve market concerns surrounding the underlying heal
 
 The CPP and the CAP differed because the CAP came with a 9 percent dividend (rather than 5 percent ratcheting to 9 percent after 5 years), and after 7 years the CAP preferred share mandatorily converted to common equity. The CPP had no option for conversion to common. The stress test which accompanied the CAP, called the Supervisory Capital Assessment Program (SCAP), concluded in May 2009. The SCAP publicly disclosed bank specific line-by-line exposures and expected losses under a severely adverse scenario, finding 10 firms required an additional \$75 billion. Ultimately, the market viewed the SCAP as credible and sufficiently stressful and marked a turning point in the financial crisis. \citep{Bernanke} and \citep{Geithner} 9 of the 10 firms found capital privately, and the remaining firm (GMAC) received public capital through a separate capital program available to the automotive industry, the Automotive Industry Financing Program. \citep{Ross2016a}. Thus, the CAP was never used.\footnote{See \citet{Ross2016a} for additional information on the SCAP and \citet{Ross2016b} for additional information on the CAP.} Figure~\ref{CDS} shows CDS spreads over time during the CPP, CAP, and SCAP.
 
-\section{Key Design Decisions} 
-
-\subsection{The CPP preferred shares were not convertible to common equity, unlike the CAP.}
+\section{Key Design Decisions}
 
 \subsection{The CPP bought equity and not assets.}
 
-\subsection{The CPP and the debt guarantee program were only available together and not separately.}
+Although the TARP had been passed with the intention of purchasing bad assets in order to shore up banks' balance sheets, Secretary Paulson moved policy towards formally using equity injection in a meeting with the President on October 7. Treasury had worked to preserve the ability to inject capital in exchange for equity in the EESA legislation in order to potentially save a systemically important financial institution from failure. However, given the quickly declining market conditions, the technical challenges of setting up an asset purchase program, and the limited funds available, Treasury decided it was best to use capital injections. \citep{paulsonbook}. 
+
+Initially, policymakers considered a program where the government matched funds raised by banks from private investors. However, as politically palatable as matching would be, it became clear that banks were unable to raise funds privately. Additionally, Treasury did not want to use common stock because of the associated voting rights. Preferred shares became the best option as the shares could be repaid regardless the price performance of the common stock, it was non-voting in most situations, and it carried a bonus for the taxpayer in the form of a dividend. 
+
+\subsection{The CPP and the debt guarantee program were effectively available together and not separately.}
+
+During the Columbus Day capital injections, regulators made clear that banks could not choose to participate in the guarantee program and not in the capital program: ``[i]t was a package deal, not a la carte.'' However, the joint announcement of the CPP along with the guarantee program caused some confusion as the two programs were closely related but had a variety of differences, specifically in the compensation restrictions for each program. Moreover, while regulators in the Columbus Day meeting emphasized the two programs were offered jointly, by the letter of the law ``no capital investment by a federal regulator required for the financial institutions volunteering for the guarantee program. An institution can participate in either, both or neither, depending only on eligibility.'' \citep{mofoCap}. 
+
+\subsection{The CPP preferred shares were not convertible to common equity, unlike the CAP.}
+
+The CPP carried a 5\% dividend for the first five years which increased to 9\% thereafter , whereas the CAP carried a 9\% dividend from the start. Unlike the CPP, however, the CAP allowed conversion to common equity at any point -- at a 10 percent discount to the share price in the 20 days leading up to the CAP's announcement. It is clear this conversion option was a key component of the program, as the CAP allowed banks to exchange their CPP shares to CAP shares beyond their maximum injection in terms of percent of risk-weighted assets. \citep{GW}.
+
+While the conversion option may have been worth the increased dividend to some banks, there was possibly an expectation of implicit convertibility in the CPP shares -- Citi converted its CPP shares in the weeks immediately following the CAP announcement. Therefore, many banks may have felt the increased dividend was not worth the explicit convertibility option.
+
+\subsection{The CPP had no time limit on redemption.}
+
+The CPP had no time limit on when participating firms redeemed Treasury's CPP investment. This contrasts with the CAP which required firms to redeem or convert to common equity within 7 years. Firms were required to repay the CAP ``solely with the proceeds of one or more issuances of common stock for cash.'' \citep{CAPTerms}. \citet{GW} note that smaller firms which faced a sufficiently large cost of issuing new equity would have been forced to carry a 9 percent dividend for 7 years or otherwise convert to common at a dilutive discount to existing shareholders. This may explain why the CPP was widely used and the CAP was not used. 
 
 \subsection{Foreign financial institutions were ineligible for the CAP.}
 
 The CAP, consistently with the SCAP, used the same definition of QFI as defined for the purposes of the CPP as unveiled in the fall of 2008. Notably, this excluded foreign institutions and U.S. branches or agencies of foreign institutions. This is largely due to the fact that foreign bank branches and agencies have no capital of their own and are subject to a different set of regulatory requirements than depository institutions in the US. Therefore, it is not possible to stress test their capital adequacy. \footnote{For further discussion of Federal Reserve regulation of foreign institutions, see \url{https://www.newyorkfed.org/aboutthefed/fedpoint/fed26.html}.}
 
-\subsection{The CPP boosted Tier 1 capital, but not tangible common equity.}
-
 \subsection{The CPP dividend started at 5 percent, and increased to 9 percent after 5 years.}
+
+The Treasury considered a structure where the CPP preferred shares carried two levels of dividends, ratcheting after a certain point. Initially, Treasury policymakers considered a higher starting dividend -- between 7 or 8 percent per year. Ultimately, however, they decided to start with 5 percent as it ``was the best way to make a capital purchase program attractive to banks while giving them an incentive to pay back the government.'' Secretary of the Treasury Hank Paulson attributes this decision at least in part to a conversation with the well-known investor Warren Buffet, who suggested a lower initial dividend. \citep{paulsonbook}.
+
+\subsection{The CPP used preferred shares and not common shares.}
+
+Preferred shares were politically advantageous because they carried little voting rights, however they were not as loss absorbing as common equity. Additionally, Treasury had to get permission from other regulators to ensure the preferred shares would indeed count towards Tier 1 capital for all involved institutions. \citep{paulsonbook} and \citep{FedTier1}.  As market analysts focused on financial institutions' TCE which excludes preferred shares, the CAP provided the explicit option to convert government capital investments to common equity in the case of further losses and credit writedowns. Therefore, the CPP's preferred shares acted more like a ``low-interest loan than true investments in their long-term health...'' \citep{Geithner}. 
+
+\subsection{The terms of CPP investments did not vary across firms.}
+
+Treasury decided to offer the CPP on the same terms for all involved firms, unlike other similar preceding programs. For example, \citet{Hoshi} describes Japan's March 1998 capital injection which purchased \textyen 100 billion in subordinated debt or loans with interest rates corresponding to a bank's financial health. The CPP ultimately decided to offer uniform terms to all institutions for two reasons: it would be difficult to design fair institution-specific pricing, and because policymakers wanted to avoid stigmatizing the weaker firms with more expensive capital. Further, the UK intervention in the days before the CPP allowed stronger firms to refrain from participation, and the equity prices of the weaker participating firms suffered from the stigma associated with the program. ``[T]he system as a whole was undercapitalized, and unless the broader shortfall was addressed, the crisis would keep migrating from the relatively weak to the relatively strong.... Recapitalizing the entire system would benefit everyone, so allowing firms to opt out and still enjoy those benefits would have been truly unfair.'' \citep{Geithner}.
 
 \section{Evaluation}
 
@@ -577,14 +619,7 @@ Finally, \citet{Ba} suggests the CPP may have slowed the banking system's recove
 
 \citet{Gift} find Columbus Day weekend capital injections resulted in a \$84-107 billion net benefit to taxpayer, mostly due to reductions in the probability of bankruptcy which they estimated would have destroyed roughly one-fourth of the enterprise value of the involved banks. To calculate the net benefit, they measure the difference-in-difference between the the banks' CDS rates and of GE capital -- a large non-bank financial company that did not participate in the CPP. By this measure, the Columbus Day intervention increased debt by \$119 billion, which added to the abnormal change in bank common and preferred equity, measures the enterprise value of the involved banks increased by \$128 billion. The FDIC deposit guarantee of derivative liabilities increases this to \$131 billion. Subtracting the difference of capital injection from the value of the preferred equity and warrants given to Treasury, yields a net benefit between \$84 billion and \$107 billion; even if the deadweight loss of taxation is 30 percent, the Columbus Day injections still have a positive value of between \$71 billion and 89 billion. \citet{Gift} note that because ``all the major banks were ``forced'' to participate by a very strong arm-twisting exercise by Treasury Secretary Paulson'' the first 9 banks likely did not benefit from any certification effect about the value of assets they held. Rather, they measure that most of the net benefit from two effects: first, the negative effect of uncertainty surrounding how the government would interfere with the bank's management; and second, the positive effect of the lowered likelihood of probability. 
 
-Finally, \citet{Gift} compares the actual CPP Columbus Day intervention with four alternatives: the original asset purchase plan, the original asset purchase program at above-market premiums, the British intervention without any debt-guarantees, and a debt-for-equity swap. They find the debt-for-equity swap the most attractive plan, as it does not require valuation of existing assets. Of the three former plans, they find the Columbus Day injection was a good balance of up-front cost and the value at risk, with much of the value of the program coming from the economical debt guarantee program. They find that equity injections without the guarantee would have been roughly twice as expensive. They find it would have taken between \$3.1 trillion and \$4.6 trillion in asset purchases to reduce CDS rates as much as the Columbus Day injections. Finally, they find the original asset purchase program revised to overpay by 20 percent would cost about \$1 trillion to reduce CDS rates as much as the actual injections. 
-
-\paragraph{Auctions}
-
-Opt-out bid = floor price:  some questioned the use of the firm's opt-out bid as the auction floor; Treasury did not explicitly say they'd do this. 
-Disclosure requirements: publicly traded banks complained the SEC required them to publicly disclose their intent to bid and the amount of capital raised to do so.
-No matching bids: many banks wanted the ability to match the winner's bid, but Treasury didn't allow it.
-
+\citet{Gift} also compares the actual CPP Columbus Day intervention with four alternatives: the original asset purchase plan, the original asset purchase program at above-market premiums, the British intervention without any debt-guarantees, and a debt-for-equity swap. They find the debt-for-equity swap the most attractive plan, as it does not require valuation of existing assets. Of the three former plans, they find the Columbus Day injection was a good balance of up-front cost and the value at risk, with much of the value of the program coming from the economical debt guarantee program. They find that equity injections without the guarantee would have been roughly twice as expensive. They find it would have taken between \$3.1 trillion and \$4.6 trillion in asset purchases to reduce CDS rates as much as the Columbus Day injections. Finally, they find the original asset purchase program revised to overpay by 20 percent would cost about \$1 trillion to reduce CDS rates as much as the actual intervention. 
 
 \phantomsection
 
@@ -648,7 +683,7 @@ No matching bids: many banks wanted the ability to match the winner's bid, but T
 \ul{Citigroup Sheds Energy Unit and Its \$100 Million Trader}, New York Times, October 9,
   2009 -- \emph{Article discussion sale of Philbro by Citigroup.} \url{http://www.nytimes.com/2009/10/10/business/10citi.html}
 \item
-\ul{U.S. May Convert Banks’ Bailouts to Equity Share}, New York Times, April 19,
+\ul{U.S. May Convert Banks' Bailouts to Equity Share}, New York Times, April 19,
   2009 -- \emph{Article discussion the possibility of banks converting CPP shares to common equity.} \url{http://www.nytimes.com/2009/04/20/business/20bailout.html}
 \end{itemize}
 
